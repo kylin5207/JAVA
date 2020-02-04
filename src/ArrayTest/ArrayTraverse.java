@@ -11,7 +11,7 @@ public class ArrayTraverse {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]+" ");
         }
-        System.out.println();
+        System.out.println();//
 
 //        2. 使用Arrays类的toString方法
         System.out.println(Arrays.toString(array));
