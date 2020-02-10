@@ -13,12 +13,12 @@ public class Bootstrap {
         frame.setOwnerName("帅琦");
 
         //普通红包
-//        OpenMode normal = new NormalMode();
-//        frame.setOpenWay(normal);
+        OpenMode normal = new NormalMode();
+        frame.setOpenWay(normal);
 
         //拼手气红包
-        OpenMode random = new RandomMode();
-        frame.setOpenWay(random);
+//        OpenMode random = new RandomMode();
+//        frame.setOpenWay(random);
 
     }
 }
