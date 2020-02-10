@@ -24,4 +24,6 @@ public class PersonRedefinition extends Person {
                 ", isMale=" + isMale +
                 '}';
     }
+
+
 }
