@@ -20,5 +20,6 @@ public class ForeachTest {
             System.out.println(string);
         }
 
+
     }
 }
