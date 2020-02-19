@@ -1,6 +1,6 @@
 package MapTest;
 
-//Map常用方法测试
+//Map双列集合常用方法测试
 
 import java.util.HashMap;
 import java.util.Map;
