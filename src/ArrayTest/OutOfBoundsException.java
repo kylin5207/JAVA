@@ -2,7 +2,7 @@ package ArrayTest;
 
 //测试数组索引越界异常
 
-public class OutOfBoundsException {
+public class OutOfBoundsException extends Throwable {
     public static void main(String[] args) {
 
         int[] array = new int[2];
