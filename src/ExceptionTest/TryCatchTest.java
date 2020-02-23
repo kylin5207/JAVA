@@ -26,7 +26,14 @@ public class TryCatchTest {
             readFile("d:\\a.txt");
         }
         catch (IOException e){
+            /*
+            Throwable中有三个异常处理方法：
+            public String getMessage():获取关于异常的相关描述信息
+            public String toString():一般不用
+            public void printStackTrace():JVM打印异常对象，默认使用该方法，异常信息最全
+            */
             System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         System.out.println("程序运行完毕");
     }
