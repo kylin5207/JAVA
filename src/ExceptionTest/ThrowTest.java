@@ -2,6 +2,8 @@ package ExceptionTest;
 
 import ArrayTest.OutOfBoundsException;
 
+import java.util.Objects;
+
 /*
     throw关键字：
         作用：在指定的方法中抛出指定的异常
@@ -21,7 +23,7 @@ public class ThrowTest {
 
 //        int[] array2 = null;
 //        System.out.println("array2数组的第3个元素是" + getElement(array2, 2));
-
+        //等价与使用Objects.requireNonNull(array)
         System.out.println("array1数组的第3个元素是" + getElement(array1, 5));
 
 
