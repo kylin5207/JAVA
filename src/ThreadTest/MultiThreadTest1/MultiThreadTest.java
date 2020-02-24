@@ -7,14 +7,14 @@ package ThreadTest.MultiThreadTest1;
             2。此外，该线程执行调度依次
             3。抢占式调度，优先级高的优先执行
  */
-public class PersonTest {
+public class MultiThreadTest {
     public static void main(String[] args) {
 
-        PersonThread person1 = new PersonThread("Kylin");
-        person1.start();
+        MyThread thread1 = new MyThread();
+        thread1.start();
 
         for (int i = 0; i < 10; i++) {
-            System.out.println("main Thread " + i);
+            System.out.println("main Thread ：" + i);
         }
 
     }
