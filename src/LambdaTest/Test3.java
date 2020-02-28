@@ -21,6 +21,9 @@ public class Test3 {
 
         invokeCalc(num1, num2, (int a, int b) -> {return a + b;});
 
+        //lambda省略写法
+        invokeCalc(num1, num2, (a,b) -> a + b);
+
 
     }
     public static void invokeCalc(int num1, int num2, Calculator cal){
