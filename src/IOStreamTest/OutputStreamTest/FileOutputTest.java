@@ -33,7 +33,7 @@ public class FileOutputTest {
 
         //写字节数组的一部分
         byte[] str2_bytes = "Kylin梦琦".getBytes();
-        fos.write(str2_bytes,0, 5);
+        fos.write(str2_bytes,5, 6);
         fos.close();
 
 
