@@ -15,6 +15,7 @@ import java.io.IOException;
 public class FileWriterTest2 {
     public static void main(String[] args) {
 
+        
         try (FileWriter fw = new FileWriter("/Users/shangmengqi/Desktop/kylin/JAVA学习/day01-code/src/IOStreamTest/WriterTest/word.txt"))
         {
             //写入单个字符

@@ -1,0 +1,5 @@
+#load properties
+#Mon Mar 02 11:48:10 CST 2020
+Kylin=165
+帅琦=168
+丑林=150
