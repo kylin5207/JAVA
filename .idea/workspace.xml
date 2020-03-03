@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="" />
+    <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/day01-code" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X9BJaidoxeXMAuj96s4z4Rcm61" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,9 +41,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.IntInput">
+  <component name="RunManager" selected="Application.TCPClient">
     <configuration name="ChangeDirection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IOStreamTest.PrintStream.ChangeDirection" />
       <module name="day01-code" />
@@ -67,19 +70,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectInputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStreamTest.InputStreamTest.ObjectInputStreamTest" />
-      <module name="day01-code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOStreamTest.InputStreamTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PrintStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IOStreamTest.PrintStream.PrintStreamTest" />
       <module name="day01-code" />
@@ -93,12 +83,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerialCollectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStreamTest.OutputStreamTest.SerialCollectionTest" />
-      <module name="day01-code" />
+    <configuration name="TCPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketServer.TCPClient" />
+      <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStreamTest.OutputStreamTest.*" />
+          <option name="PATTERN" value="SocketServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TCPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketServer.TCPServer" />
+      <module name="day02-NetworkProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SocketServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TCPClient" />
+        <item itemvalue="Application.TCPServer" />
         <item itemvalue="Application.IntInput" />
         <item itemvalue="Application.ChangeDirection" />
         <item itemvalue="Application.PrintStreamTest" />
-        <item itemvalue="Application.SerialCollectionTest" />
-        <item itemvalue="Application.ObjectInputStreamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,12 +202,18 @@
       <workItem from="1583138287512" duration="4608000" />
       <workItem from="1583203358313" duration="3707000" />
       <workItem from="1583220652829" duration="782000" />
-      <workItem from="1583221465411" duration="544000" />
+      <workItem from="1583221465411" duration="1125000" />
+      <workItem from="1583223154430" duration="1856000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/day01-code" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Project_Structure" timestamp="1583221947007">
@@ -234,37 +243,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1582898136857" />
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom" timestamp="1583221460301">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583228545069">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583221460301" />
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583228545069" />
     <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1583145135718" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="236" key="GridCell.Tab.0.center" timestamp="1583221460300">
+    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583228545066">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583221460300" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583228545066" />
     <state width="1398" height="196" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1583145135717" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="236" key="GridCell.Tab.0.left" timestamp="1583221460299">
+    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583228545064">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583221460299" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583228545064" />
     <state width="1398" height="196" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1583145135715" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="236" key="GridCell.Tab.0.right" timestamp="1583221460300">
+    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583228545068">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583221460300" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583228545068" />
     <state width="1398" height="196" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1583145135718" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
@@ -298,10 +307,10 @@
     <state width="1398" height="253" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="255" key="GridCell.Tab.1.right/0.23.1440.798@0.23.1440.798" timestamp="1581258187541" />
     <state width="1398" height="303" key="GridCell.Tab.1.right/0.23.1440.801@0.23.1440.801" timestamp="1581420800667" />
-    <state x="251" y="23" width="1024" height="794" key="SettingsEditor" timestamp="1583221733895">
+    <state x="251" y="23" width="1024" height="794" key="SettingsEditor" timestamp="1583222514561">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="251" y="23" width="1024" height="794" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583221733895" />
+    <state x="251" y="23" width="1024" height="794" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583222514561" />
     <state x="251" y="60" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1580466378141" />
     <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582454939438">
       <screen x="0" y="0" width="1440" height="900" />
