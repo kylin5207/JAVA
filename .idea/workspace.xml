@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +42,13 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.TCPClient">
-    <configuration name="ChangeDirection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStreamTest.PrintStream.ChangeDirection" />
-      <module name="day01-code" />
+  <component name="RunManager" selected="Application.ClientServer">
+    <configuration name="ClientServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketServer.UploadFile.Client.ClientServer" />
+      <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStreamTest.PrintStream.*" />
+          <option name="PATTERN" value="SocketServer.UploadFile.Client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOStreamTest.PrintStream.PrintStreamTest" />
-      <module name="day01-code" />
+    <configuration name="TCPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketServer.TCPClient" />
+      <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOStreamTest.PrintStream.*" />
+          <option name="PATTERN" value="SocketServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TCPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SocketServer.TCPClient" />
+    <configuration name="TCPServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SocketServer.UploadFile.Server.TCPServer" />
       <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SocketServer.*" />
+          <option name="PATTERN" value="SocketServer.UploadFile.Server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientServer" />
+        <item itemvalue="Application.TCPServer (1)" />
         <item itemvalue="Application.TCPClient" />
         <item itemvalue="Application.TCPServer" />
         <item itemvalue="Application.IntInput" />
-        <item itemvalue="Application.ChangeDirection" />
-        <item itemvalue="Application.PrintStreamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +202,8 @@
       <workItem from="1583203358313" duration="3707000" />
       <workItem from="1583220652829" duration="782000" />
       <workItem from="1583221465411" duration="1125000" />
-      <workItem from="1583223154430" duration="1856000" />
+      <workItem from="1583223154430" duration="2053000" />
+      <workItem from="1583289491595" duration="2531000" />
     </task>
     <servers />
   </component>
@@ -243,37 +243,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1582898136857" />
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583228545069">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583293514428">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583228545069" />
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583293514428" />
     <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1583145135718" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583228545066">
+    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583293514419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583228545066" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583293514419" />
     <state width="1398" height="196" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1583145135717" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583228545064">
+    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583293514418">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583228545064" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583293514418" />
     <state width="1398" height="196" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1583145135715" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583228545068">
+    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583293514421">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583228545068" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583293514421" />
     <state width="1398" height="196" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1583145135718" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
@@ -321,10 +321,10 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="272" y="164" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.797@0.23.1440.797" timestamp="1582168042097" />
-    <state x="327" y="76" width="816" height="824" key="find.popup" timestamp="1583207675257">
+    <state x="327" y="76" width="816" height="824" key="find.popup" timestamp="1583290922644">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="327" y="76" width="816" height="824" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1583207675257" />
+    <state x="327" y="76" width="816" height="824" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1583290922644" />
     <state x="327" y="90" width="816" height="727" key="find.popup/0.23.1440.794@0.23.1440.794" timestamp="1583143708460" />
     <state x="624" y="23" width="816" height="729" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1582105042200" />
     <state x="386" y="57" width="667" height="729" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1581172707604" />
