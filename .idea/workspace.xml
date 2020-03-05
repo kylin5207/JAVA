@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -42,7 +42,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.MyInterfaceTest">
+  <component name="RunManager" selected="Application.LambdaLogger">
     <configuration name="ClientServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SocketServer.UploadFile.Client.ClientServer" />
       <module name="day02-NetworkProgramming" />
@@ -56,38 +56,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LambdaLogger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionalInterface.LoggerTest.LambdaLogger" />
+      <module name="day02-NetworkProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FunctionalInterface.LoggerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Logger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionalInterface.LoggerTest.Logger" />
+      <module name="day02-NetworkProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FunctionalInterface.LoggerTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyInterfaceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FunctionalInterface.MyInterfaceTest" />
       <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FunctionalInterface.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TCPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SocketServer.TCPClient" />
-      <module name="day02-NetworkProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SocketServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TCPServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SocketServer.UploadFile.Server.TCPServer" />
-      <module name="day02-NetworkProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SocketServer.UploadFile.Server.*" />
+          <option name="PATTERN" value="FunctionalInterface.LoggerTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LambdaLogger" />
+        <item itemvalue="Application.Logger" />
         <item itemvalue="Application.MyInterfaceTest" />
         <item itemvalue="Application.TCPServer (2)" />
         <item itemvalue="Application.ClientServer" />
-        <item itemvalue="Application.TCPServer (1)" />
-        <item itemvalue="Application.TCPClient" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +206,8 @@
       <workItem from="1583289491595" duration="2729000" />
       <workItem from="1583298394412" duration="3907000" />
       <workItem from="1583335022869" duration="149000" />
-      <workItem from="1583335187082" duration="1098000" />
+      <workItem from="1583335187082" duration="1209000" />
+      <workItem from="1583376759877" duration="1059000" />
     </task>
     <servers />
   </component>
@@ -246,37 +247,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583300485366" />
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583336317906">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583377835265">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583336317906" />
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583377835265" />
     <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1583301978837" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583336317904">
+    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583377835264">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583336317904" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583377835264" />
     <state width="1398" height="284" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583336317904">
+    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583377835264">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583336317904" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583377835264" />
     <state width="1398" height="284" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1583301978835" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583336317905">
+    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583377835265">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583336317905" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583377835265" />
     <state width="1398" height="284" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
@@ -336,10 +337,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1583221635698" />
-    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup" timestamp="1582775846481">
+    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup" timestamp="1583377009678">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582775846481" />
+    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583377009678" />
     <state x="407" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1581159038528" />
   </component>
   <component name="XDebuggerManager">
