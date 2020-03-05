@@ -42,7 +42,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.ANDTHENTest">
+  <component name="RunManager" selected="Application.PrintInformation">
     <configuration name="ANDTHENTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FunctionalInterface.ConsumerTest.ANDTHENTest" />
       <module name="day02-NetworkProgramming" />
@@ -95,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionalInterface.LambdaTest.LambdaComparator" />
+    <configuration name="PrintInformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FunctionalInterface.ConsumerTest.PrintInformation" />
       <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FunctionalInterface.LambdaTest.*" />
+          <option name="PATTERN" value="FunctionalInterface.ConsumerTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintInformation" />
         <item itemvalue="Application.ANDTHENTest" />
         <item itemvalue="Application.Demo (1)" />
         <item itemvalue="Application.GetMax" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.LambdaComparator" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +207,7 @@
       <workItem from="1583298394412" duration="3907000" />
       <workItem from="1583335022869" duration="149000" />
       <workItem from="1583335187082" duration="1209000" />
-      <workItem from="1583376759877" duration="4759000" />
+      <workItem from="1583376759877" duration="5597000" />
     </task>
     <servers />
   </component>
@@ -247,37 +247,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583300485366" />
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583385872759">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583386726708">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583385872759" />
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583386726708" />
     <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1583301978837" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583385872758">
+    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583386726707">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583385872758" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583386726707" />
     <state width="1398" height="284" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583385872758">
+    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583386726706">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583385872758" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583386726706" />
     <state width="1398" height="284" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1583301978835" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583385872759">
+    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583386726707">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583385872759" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583386726707" />
     <state width="1398" height="284" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
