@@ -1,10 +1,10 @@
 package StreamTest.Introduction;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.stream.Stream;
 
 /*
-    集合处理对方式(传统方法)
+    集合处理对方式(Stream流方法)
 
     现在有两个 ArrayList 集合存储队伍当中的多个成员姓名，要求使用传统的for循环(或增强for循环)依次进行以下若干操作步骤:
     1. 第一个队伍只要名字为3个字的成员姓名;存储到一个新集合中。
@@ -14,9 +14,8 @@ import java.util.List;
     5. 将两个队伍合并为一个队伍。
     6. 根据姓名创建 Person 对象;存储到一个新集合中。
     7. 打印整个队伍的Person对象信息。
-
  */
-public class NormalMethod {
+public class StreamMethod {
     public static void main(String[] args) {
         //第一支队伍
         ArrayList<String> one = new ArrayList<>();
@@ -29,20 +28,6 @@ public class NormalMethod {
         one.add("庄子");
         one.add("洪七公");
 
-//        1. 第一个队伍只要名字为3个字的成员姓名;存储到一个新集合中。
-        ArrayList<String> one1 = new ArrayList<>();
-        for (String s : one) {
-            if(s.length() == 3) {
-                one1.add(s);
-            }
-        }
-
-//        第一个队伍筛选之后只要前3个人;存储到一个新集合中
-        ArrayList<String> one2 = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            one2.add(one1.get(i));
-        }
-
         //第二支队伍
         ArrayList<String> two = new ArrayList<>();
         two.add("古力娜扎");
@@ -53,30 +38,19 @@ public class NormalMethod {
         two.add("张天爱");
         two.add("张二狗");
 
-//        第二个队伍只要姓张的成员姓名;存储到一个新集合中。
-        ArrayList<String> two1 = new ArrayList<>();
-        for (String s : two) {
-            if (s.startsWith("张")) {
-                two1.add(s);
-            }
-        }
+//        1. 第一个队伍只要名字为3个字的成员姓名,第一个队伍筛选之后只要前3个人;存储到一个新集合中。
+        Stream<String> stream1 = one.stream().filter(s->s.length()==3).limit(3);
 
-//        第二个队伍筛选之后不要前2个人。
-        two1.remove(0);
-        two1.remove(0);
+//        2. 第二个队伍只要姓张的成员姓名,第二个队伍筛选之后不要前2个人;存储到一个新集合中。
+        Stream<String> stream2 = two.stream().filter(s->s.startsWith("张")).skip(2);
 
-//        将两个队伍合并为一个队伍
-        one2.addAll(two1);
+//        3. 将两个队伍合并为一个队伍。
+        Stream<String> stream3 = Stream.concat(stream1,stream2);
 
-//        根据姓名创建 Person 对象;存储到一个新集合中。
-        ArrayList<Person> personlist = new ArrayList<>();
-        for (String s : one2) {
-            personlist.add(new Person(s));
-        }
+//        4. 根据姓名创建 Person 对象;存储到一个新集合中。
+        Stream<Person> personStream = stream3.map(s->new Person(s));
 
-//        打印整个队伍的Person对象信息
-        for (Person person : personlist) {
-            System.out.println(person);
-        }
+//        5. 打印整个队伍的Person对象信息。
+        personStream.forEach(person-> System.out.println(person));
     }
 }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02-code/src/StreamTest/Introduction/NormalMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02-code/src/StreamTest/Introduction/NormalMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +43,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.ConcatTest">
+  <component name="RunManager" selected="Application.StreamMethod">
     <configuration name="ConcatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StreamTest.Demo.ConcatTest" />
-      <module name="day02-NetworkProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StreamTest.Demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamTest.Demo.CountTest" />
       <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
@@ -82,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StreamTest.Demo.MapTest" />
+    <configuration name="NormalMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamTest.Introduction.NormalMethod" />
       <module name="day02-NetworkProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StreamTest.Demo.*" />
+          <option name="PATTERN" value="StreamTest.Introduction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,13 +96,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreamMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StreamTest.Introduction.StreamMethod" />
+      <module name="day02-NetworkProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StreamTest.Introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamMethod" />
+        <item itemvalue="Application.NormalMethod" />
         <item itemvalue="Application.ConcatTest" />
         <item itemvalue="Application.SkipTest" />
         <item itemvalue="Application.LimitTest" />
-        <item itemvalue="Application.CountTest" />
-        <item itemvalue="Application.MapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +212,7 @@
       <workItem from="1583395280807" duration="2607000" />
       <workItem from="1583642333840" duration="3874000" />
       <workItem from="1583653832086" duration="521000" />
-      <workItem from="1583670173213" duration="3539000" />
+      <workItem from="1583670173213" duration="4875000" />
     </task>
     <servers />
   </component>
@@ -232,10 +233,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="445" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1582880489399" />
-    <state x="533" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1583335765768">
+    <state x="533" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1583674602123">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1583335765768" />
+    <state x="533" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1583674602123" />
     <state x="533" y="138" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797@0.23.1440.797" timestamp="1582111658161" />
     <state x="533" y="138" key="#com.intellij.ide.util.MemberChooser/0.23.1440.798@0.23.1440.798" timestamp="1581574895144" />
     <state x="533" y="139" key="#com.intellij.ide.util.MemberChooser/0.23.1440.804@0.23.1440.804" timestamp="1581256051141" />
@@ -251,37 +252,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583300485366" />
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583674075931">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583675690320">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583674075931" />
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583675690320" />
     <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1583301978837" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583674075929">
+    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583675690319">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583674075929" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583675690319" />
     <state width="1398" height="284" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583674075927">
+    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583675690319">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583674075927" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583675690319" />
     <state width="1398" height="284" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1583301978835" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583674075930">
+    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583675690320">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583674075930" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583675690320" />
     <state width="1398" height="284" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
