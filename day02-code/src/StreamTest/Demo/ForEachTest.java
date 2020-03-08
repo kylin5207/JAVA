@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 public class ForEachTest {
     public static void main(String[] args) {
 
-        Stream stream = Stream.of("张三", "李四", "王五", "赵四");
+        Stream<String> stream = Stream.of("张三", "李四", "王五", "赵四");
         stream.forEach((name)-> System.out.println(name));
 
     }
