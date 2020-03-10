@@ -12,6 +12,7 @@ import java.lang.reflect.Field;
         Field对象的方法：
             set(Object obj, Object value):设置值
             get(Object obj):获取值
+            setAccessible(true):忽略访问权限修饰符的安全检查，暴力反射
 
  */
 public class FieldTest {
@@ -39,6 +40,14 @@ public class FieldTest {
         for (Field declaredfield : declaredfields) {
             System.out.println(declaredfield);
         }
+
+        //5. Field getDeclaredField(String name)
+        Field namefield = personClass.getDeclaredField("name");
+
+        namefield.setAccessible(true); //暴力反射
+
+        System.out.println(namefield.get(person));
+
 
     }
 }
