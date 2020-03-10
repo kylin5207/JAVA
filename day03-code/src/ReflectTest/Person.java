@@ -3,13 +3,15 @@ package ReflectTest;
 public class Person {
     private String name;
     private int age;
+    public String classID;
 
     public Person() {
     }
 
-    public Person(String name, int age) {
+    public Person(String name, int age, String classID) {
         this.name = name;
         this.age = age;
+        this.classID = classID;
     }
 
     public String getName() {
@@ -28,11 +30,20 @@ public class Person {
         this.age = age;
     }
 
+    public String getClassID() {
+        return classID;
+    }
+
+    public void setClassID(String classID) {
+        this.classID = classID;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", classID='" + classID + '\'' +
                 '}';
     }
 }
