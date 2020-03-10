@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-code/JavaWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaTestCode" />
@@ -16,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -32,17 +40,46 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
-  <component name="RunManager" selected="Application.Demo (1)">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Test.JUnit" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CalculateTest">
+    <configuration name="CalculateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.NormalMethod.CalculateTest" />
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.NormalMethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConstructionQuote" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FunctionalInterface.MethodQuote.ConstructionQuote.ConstructionQuote" />
       <module name="day02-NetworkProgramming" />
@@ -69,52 +106,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionalInterface.MethodQuote.Demo.Demo" />
-      <module name="day02-NetworkProgramming" />
+    <configuration name="CalculateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FunctionalInterface.MethodQuote.StaticQuote.*" />
+          <option name="PATTERN" value="Test.JUnit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Test.JUnit" />
+      <option name="MAIN_CLASS_NAME" value="Test.JUnit.CalculateTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Man" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionalInterface.MethodQuote.SuperQuote.Man" />
-      <module name="day02-NetworkProgramming" />
+    <configuration name="CalculateTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FunctionalInterface.MethodQuote.SuperQuote.*" />
+          <option name="PATTERN" value="Test.JUnit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StaticMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FunctionalInterface.MethodQuote.StaticQuote.StaticMethod" />
-      <module name="day02-NetworkProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="FunctionalInterface.MethodQuote.StaticQuote.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="Test.JUnit" />
+      <option name="MAIN_CLASS_NAME" value="Test.JUnit.CalculateTest" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculateTest" />
+        <item itemvalue="JUnit.CalculateTest.testAdd" />
+        <item itemvalue="Application.CalculateTest" />
         <item itemvalue="Application.Demo (1)" />
         <item itemvalue="Application.ConstructionQuote" />
-        <item itemvalue="Application.Man" />
-        <item itemvalue="Application.StaticMethod" />
-        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +241,15 @@
       <workItem from="1583642333840" duration="3874000" />
       <workItem from="1583653832086" duration="521000" />
       <workItem from="1583670173213" duration="4993000" />
-      <workItem from="1583723883275" duration="4482000" />
+      <workItem from="1583723883275" duration="4790000" />
+      <workItem from="1583762202359" duration="959000" />
+      <workItem from="1583763764338" duration="79000" />
+      <workItem from="1583763866906" duration="415000" />
+      <workItem from="1583767356339" duration="211000" />
+      <workItem from="1583810229387" duration="766000" />
+      <workItem from="1583823839809" duration="67000" />
+      <workItem from="1583824150919" duration="97000" />
+      <workItem from="1583824252214" duration="2010000" />
     </task>
     <servers />
   </component>
@@ -225,10 +262,15 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#Project_Structure" timestamp="1583221947007">
+    <state x="320" y="115" width="800" height="717" key="#Intentions" timestamp="1583763553150">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="320" y="115" width="800" height="717" key="#Intentions/0.0.1440.900@0.0.1440.900" timestamp="1583763553150" />
+    <state x="320" y="124" key="#Project_Structure" timestamp="1583823244869">
+      <screen x="0" y="23" width="1440" height="794" />
+    </state>
     <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1583221947007" />
+    <state x="320" y="124" key="#Project_Structure/0.23.1440.794@0.23.1440.794" timestamp="1583823244869" />
     <state x="445" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582880489399">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -252,37 +294,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583300485366" />
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583743866738">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1583826573901">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583743866738" />
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583826573901" />
     <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1583301978837" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583743866737">
+    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1583826573900">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583743866737" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583826573900" />
     <state width="1398" height="284" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583743866736">
+    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1583826573899">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583743866736" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583826573899" />
     <state width="1398" height="284" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1583301978835" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583743866737">
+    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1583826573900">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583743866737" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583826573900" />
     <state width="1398" height="284" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1583301978836" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
@@ -316,16 +358,25 @@
     <state width="1398" height="253" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="255" key="GridCell.Tab.1.right/0.23.1440.798@0.23.1440.798" timestamp="1581258187541" />
     <state width="1398" height="303" key="GridCell.Tab.1.right/0.23.1440.801@0.23.1440.801" timestamp="1581420800667" />
-    <state x="251" y="23" width="1024" height="794" key="SettingsEditor" timestamp="1583222514561">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="382" y="95" width="1024" height="722" key="SettingsEditor" timestamp="1583824662399">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
     <state x="251" y="23" width="1024" height="794" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583222514561" />
+    <state x="382" y="95" width="1024" height="722" key="SettingsEditor/0.23.1440.794@0.23.1440.794" timestamp="1583824662399" />
     <state x="251" y="60" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1580466378141" />
+    <state x="432" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583810323015">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="432" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1583810323015" />
     <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582454939438">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1582454939438" />
     <state x="509" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.798@0.23.1440.798" timestamp="1581333141753" />
+    <state x="499" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583810709140">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="499" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1583810709140" />
     <state x="272" y="164" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582168042097">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -338,10 +389,11 @@
     <state x="624" y="23" width="816" height="729" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1582105042200" />
     <state x="386" y="57" width="667" height="729" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1581172707604" />
     <state x="624" y="23" width="816" height="732" key="find.popup/0.23.1440.801@0.23.1440.801" timestamp="1581252658600" />
-    <state x="114" y="72" key="new project wizard" timestamp="1583221635698">
+    <state x="114" y="72" key="new project wizard" timestamp="1583767702003">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1583221635698" />
+    <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1583767702003" />
+    <state x="114" y="62" key="new project wizard/0.23.1440.794@0.23.1440.794" timestamp="1583767642406" />
     <state x="407" y="137" width="670" height="764" key="search.everywhere.popup" timestamp="1583377009678">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
