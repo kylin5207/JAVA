@@ -1,0 +1,6 @@
+div方法出现异常
+异常名称：ArithmeticException
+异常原因：/ by zero
+-----------------
+
+此次一共出现1个异常
