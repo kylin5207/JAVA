@@ -46,4 +46,8 @@ public class Person {
                 ", classID='" + classID + '\'' +
                 '}';
     }
+
+    public void test() {
+        System.out.println("------Person成员方法测试----");
+    }
 }
