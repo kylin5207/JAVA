@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-code/JavaWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-code/JavaWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-code/src/ReflectTest/ConstructorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-code/src/ReflectTest/ConstructorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWeb/AnnotationTest/AnnotationDemo/bug.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWeb/AnnotationTest/AnnotationDemo/bug.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWeb/META-INF/JavaWeb.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-code/src/JDBCTest/Demo/JDBCdemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-code/src/JDBCTest/Demo/JDBCdemo1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +70,52 @@
       <recent name="$PROJECT_DIR$/day03-code/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBCdemo1">
-    <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AnnotationTest.DefinedAnnotation.DemoTest" />
+  <component name="RunManager" selected="Application.ExexuteUpdateTest_create">
+    <configuration name="ExecuteUpdateTest_delete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCTest.Demo.ExecuteUpdateTest_delete" />
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AnnotationTest.DefinedAnnotation.*" />
+          <option name="PATTERN" value="JDBCTest.Demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecuteUpdateTest_insert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCTest.Demo.ExecuteUpdateTest_insert" />
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBCTest.Demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecuteUpdateTest_update" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCTest.Demo.ExecuteUpdateTest_update" />
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBCTest.Demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExexuteUpdateTest_create" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCTest.Demo.ExexuteUpdateTest_create" />
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBCTest.Demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,55 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReflectTest.Demo.ReflectDemo" />
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReflectTest.Demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AnnotationTest.AnnotationDemo.TestCheck" />
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AnnotationTest.AnnotationDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculateTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.JUnit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test.JUnit" />
-      <option name="MAIN_CLASS_NAME" value="Test.JUnit.CalculateTest" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExexuteUpdateTest_create" />
+        <item itemvalue="Application.ExecuteUpdateTest_delete" />
+        <item itemvalue="Application.ExecuteUpdateTest_update" />
+        <item itemvalue="Application.ExecuteUpdateTest_insert" />
         <item itemvalue="Application.JDBCdemo1" />
-        <item itemvalue="Application.ReflectDemo" />
-        <item itemvalue="JUnit.CalculateTest.testAdd" />
-        <item itemvalue="Application.TestCheck" />
-        <item itemvalue="Application.DemoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +254,7 @@
       <workItem from="1583913691993" duration="8940000" />
       <workItem from="1583930630826" duration="127000" />
       <workItem from="1584172328177" duration="1243000" />
-      <workItem from="1584412737100" duration="1446000" />
+      <workItem from="1584412737100" duration="4249000" />
     </task>
     <servers />
   </component>
@@ -306,37 +300,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583300485366" />
-    <state width="1398" height="237" key="GridCell.Tab.0.bottom" timestamp="1584414996305">
+    <state width="1398" height="237" key="GridCell.Tab.0.bottom" timestamp="1584422887504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584414996305" />
+    <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584422887504" />
     <state width="1398" height="235" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1583921824070" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="237" key="GridCell.Tab.0.center" timestamp="1584414996302">
+    <state width="1398" height="237" key="GridCell.Tab.0.center" timestamp="1584422887503">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="237" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584414996302" />
+    <state width="1398" height="237" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584422887503" />
     <state width="1398" height="235" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1583921824068" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="237" key="GridCell.Tab.0.left" timestamp="1584414996301">
+    <state width="1398" height="237" key="GridCell.Tab.0.left" timestamp="1584422887502">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="237" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584414996301" />
+    <state width="1398" height="237" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584422887502" />
     <state width="1398" height="235" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1583921824067" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="237" key="GridCell.Tab.0.right" timestamp="1584414996304">
+    <state width="1398" height="237" key="GridCell.Tab.0.right" timestamp="1584422887503">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="237" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584414996304" />
+    <state width="1398" height="237" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584422887503" />
     <state width="1398" height="235" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1583921824069" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />

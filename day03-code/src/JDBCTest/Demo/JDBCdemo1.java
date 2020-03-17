@@ -22,9 +22,15 @@ import java.sql.Statement;
 public class JDBCdemo1 {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 //        1. 注册驱动
+        /*
+            通过查看源码发现:在com.mysql.jdbc.Driver类中存在静态代码块
+         */
         Class.forName("com.mysql.jdbc.Driver");
 
 //        2. 获取数据库连接对象 Connection
+        /*
+            指定路径url，用户名user，密码password
+         */
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1", "root", "123456");
 
 //        3. 定义sql
