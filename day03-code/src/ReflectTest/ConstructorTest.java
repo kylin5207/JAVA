@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 
     Constructor:构造方法创建对象:
         T newInstance(Object... initargs)
-        如果使⽤用空参数构造⽅方法创建对象，操作可以简化:Class对象的newInstance⽅法
+        如果使用空参数构造方法创建对象，操作可以简化:Class对象的newInstance⽅法
  */
 public class ConstructorTest {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
