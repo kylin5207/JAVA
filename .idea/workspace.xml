@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-code/JavaWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-code/JavaWeb.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VertifyParamters">
+  <component name="RunManager" selected="Application.DruidTest">
     <configuration name="C3P0Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JDBCTest.DataSource.C3P0.C3P0Demo1" />
       <module name="JavaWeb" />
@@ -104,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JDBCTest.JDBCUtilsTest.LoginTest" />
+    <configuration name="DruidTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCTest.DataSource.DRUID.DruidTest" />
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDBCTest.JDBCUtilsTest.*" />
+          <option name="PATTERN" value="JDBCTest.DataSource.DRUID.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DruidTest" />
         <item itemvalue="Application.VertifyParamters" />
         <item itemvalue="Application.C3P0Demo1" />
         <item itemvalue="Application.CommitTest" />
         <item itemvalue="Application.PreparedStatementTest" />
-        <item itemvalue="Application.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +264,7 @@
       <workItem from="1584434700387" duration="2596000" />
       <workItem from="1584499337987" duration="7345000" />
       <workItem from="1584522328462" duration="1182000" />
-      <workItem from="1584584604307" duration="2888000" />
+      <workItem from="1584584604307" duration="3990000" />
     </task>
     <servers />
   </component>
@@ -312,37 +311,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583300485366" />
-    <state width="1398" height="196" key="GridCell.Tab.0.bottom" timestamp="1584589520856">
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom" timestamp="1584590664486">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584589520856" />
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584590664486" />
     <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1584501283515" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="196" key="GridCell.Tab.0.center" timestamp="1584589520854">
+    <state width="1398" height="196" key="GridCell.Tab.0.center" timestamp="1584590664485">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584589520854" />
+    <state width="1398" height="196" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584590664485" />
     <state width="1398" height="196" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1584501283514" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="196" key="GridCell.Tab.0.left" timestamp="1584589520854">
+    <state width="1398" height="196" key="GridCell.Tab.0.left" timestamp="1584590664484">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584589520854" />
+    <state width="1398" height="196" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584590664484" />
     <state width="1398" height="196" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1584501283513" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="196" key="GridCell.Tab.0.right" timestamp="1584589520855">
+    <state width="1398" height="196" key="GridCell.Tab.0.right" timestamp="1584590664486">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584589520855" />
+    <state width="1398" height="196" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584590664486" />
     <state width="1398" height="196" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1584501283514" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
@@ -399,10 +398,10 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="272" y="164" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.797@0.23.1440.797" timestamp="1582168042097" />
-    <state x="327" y="90" width="816" height="727" key="find.popup" timestamp="1584502843564">
-      <screen x="0" y="23" width="1440" height="794" />
+    <state x="327" y="76" width="816" height="824" key="find.popup" timestamp="1584590442025">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="327" y="76" width="816" height="824" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1583924080005" />
+    <state x="327" y="76" width="816" height="824" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1584590442025" />
     <state x="327" y="90" width="816" height="727" key="find.popup/0.23.1440.794@0.23.1440.794" timestamp="1584502843564" />
     <state x="624" y="23" width="816" height="729" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1582105042200" />
     <state x="386" y="57" width="667" height="729" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1581172707604" />
