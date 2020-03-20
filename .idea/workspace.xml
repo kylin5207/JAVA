@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day04-web/day04-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,7 @@
         <option value="JUnit4 Test Class" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -37,6 +40,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -64,55 +68,24 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day04-web/src/img" />
       <recent name="$PROJECT_DIR$/day03-code" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="JDBCTest.SpringJDBC" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/day03-code/lib" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
       <recent name="$PROJECT_DIR$/day03-code/lib" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="JDBCTest.SpringJDBC" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTemplateTest2.test7">
-    <configuration name="JDBCTemplateTest2.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBCTest.SpringJDBC.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBCTest.SpringJDBC" />
-      <option name="MAIN_CLASS_NAME" value="JDBCTest.SpringJDBC.JDBCTemplateTest2" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JDBCTemplateTest2.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBCTest.SpringJDBC.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBCTest.SpringJDBC" />
-      <option name="MAIN_CLASS_NAME" value="JDBCTest.SpringJDBC.JDBCTemplateTest2" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.2_table.html">
     <configuration name="JDBCTemplateTest2.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
@@ -161,13 +134,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="1_htmltest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/1_htmltest.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="2_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/2_table.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.2_table.html" />
+        <item itemvalue="JavaScript Debug.1_htmltest.html" />
         <item itemvalue="JUnit.JDBCTemplateTest2.test7" />
         <item itemvalue="JUnit.JDBCTemplateTest2.test6" />
         <item itemvalue="JUnit.JDBCTemplateTest2.test5" />
-        <item itemvalue="JUnit.JDBCTemplateTest2.test4" />
-        <item itemvalue="JUnit.JDBCTemplateTest2.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +263,9 @@
       <workItem from="1584499337987" duration="7345000" />
       <workItem from="1584522328462" duration="1182000" />
       <workItem from="1584584604307" duration="6814000" />
-      <workItem from="1584604605539" duration="4542000" />
+      <workItem from="1584604605539" duration="4797000" />
+      <workItem from="1584672560135" duration="3653000" />
+      <workItem from="1584689593344" duration="888000" />
     </task>
     <servers />
   </component>
@@ -331,37 +312,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583300485366" />
-    <state width="1398" height="196" key="GridCell.Tab.0.bottom" timestamp="1584610099884">
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom" timestamp="1584610388161">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584610099884" />
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584610388161" />
     <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.23.1440.794@0.23.1440.794" timestamp="1584501283515" />
     <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1582168146323" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1581420800666" />
     <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581520205591" />
-    <state width="1398" height="196" key="GridCell.Tab.0.center" timestamp="1584610099883">
+    <state width="1398" height="196" key="GridCell.Tab.0.center" timestamp="1584610388160">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584610099883" />
+    <state width="1398" height="196" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584610388160" />
     <state width="1398" height="196" key="GridCell.Tab.0.center/0.23.1440.794@0.23.1440.794" timestamp="1584501283514" />
     <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1581575614209" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1581420800665" />
     <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="196" key="GridCell.Tab.0.left" timestamp="1584610099883">
+    <state width="1398" height="196" key="GridCell.Tab.0.left" timestamp="1584610388159">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584610099883" />
+    <state width="1398" height="196" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584610388159" />
     <state width="1398" height="196" key="GridCell.Tab.0.left/0.23.1440.794@0.23.1440.794" timestamp="1584501283513" />
     <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1581575614208" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1581420800664" />
     <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581520205590" />
-    <state width="1398" height="196" key="GridCell.Tab.0.right" timestamp="1584610099884">
+    <state width="1398" height="196" key="GridCell.Tab.0.right" timestamp="1584610388160">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="196" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584610099884" />
+    <state width="1398" height="196" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584610388160" />
     <state width="1398" height="196" key="GridCell.Tab.0.right/0.23.1440.794@0.23.1440.794" timestamp="1584501283514" />
     <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1582168146322" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1581575614210" />
@@ -426,10 +407,10 @@
     <state x="624" y="23" width="816" height="729" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1582105042200" />
     <state x="386" y="57" width="667" height="729" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1581172707604" />
     <state x="624" y="23" width="816" height="732" key="find.popup/0.23.1440.801@0.23.1440.801" timestamp="1581252658600" />
-    <state x="114" y="72" key="new project wizard" timestamp="1583930639548">
+    <state x="114" y="72" key="new project wizard" timestamp="1584672681856">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1583930639548" />
+    <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1584672681856" />
     <state x="114" y="62" key="new project wizard/0.23.1440.794@0.23.1440.794" timestamp="1583767642406" />
     <state x="407" y="137" width="670" height="764" key="search.everywhere.popup" timestamp="1583839495419">
       <screen x="0" y="0" width="1440" height="900" />
