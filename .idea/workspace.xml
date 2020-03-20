@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day04-web/day04-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,23 +83,7 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.2_table.html">
-    <configuration name="JDBCTemplateTest2.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBCTest.SpringJDBC.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBCTest.SpringJDBC" />
-      <option name="MAIN_CLASS_NAME" value="JDBCTest.SpringJDBC.JDBCTemplateTest2" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.TravelCase.html">
     <configuration name="JDBCTemplateTest2.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
@@ -140,13 +122,16 @@
     <configuration name="2_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/2_table.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="TravelCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/TravelCase.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.TravelCase.html" />
         <item itemvalue="JavaScript Debug.2_table.html" />
         <item itemvalue="JavaScript Debug.1_htmltest.html" />
         <item itemvalue="JUnit.JDBCTemplateTest2.test7" />
         <item itemvalue="JUnit.JDBCTemplateTest2.test6" />
-        <item itemvalue="JUnit.JDBCTemplateTest2.test5" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +250,7 @@
       <workItem from="1584584604307" duration="6814000" />
       <workItem from="1584604605539" duration="4797000" />
       <workItem from="1584672560135" duration="3653000" />
-      <workItem from="1584689593344" duration="888000" />
+      <workItem from="1584689593344" duration="3834000" />
     </task>
     <servers />
   </component>
@@ -386,10 +371,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="432" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1583810323015" />
-    <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582454939438">
+    <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584693029904">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1582454939438" />
+    <state x="509" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1584693029904" />
     <state x="509" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.798@0.23.1440.798" timestamp="1581333141753" />
     <state x="499" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583810709140">
       <screen x="0" y="0" width="1440" height="900" />
