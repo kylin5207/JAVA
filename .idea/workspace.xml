@@ -51,7 +51,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day03-code/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-web/src/image" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -75,6 +75,7 @@
       <recent name="JDBCTest.SpringJDBC" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day04-web/src/image" />
       <recent name="$PROJECT_DIR$/day03-code/lib" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
       <recent name="$PROJECT_DIR$/day03-code/lib" />
@@ -83,43 +84,17 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.TravelCase.html">
-    <configuration name="JDBCTemplateTest2.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBCTest.SpringJDBC.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBCTest.SpringJDBC" />
-      <option name="MAIN_CLASS_NAME" value="JDBCTest.SpringJDBC.JDBCTemplateTest2" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JDBCTemplateTest2.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBCTest.SpringJDBC.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBCTest.SpringJDBC" />
-      <option name="MAIN_CLASS_NAME" value="JDBCTest.SpringJDBC.JDBCTemplateTest2" />
-      <option name="METHOD_NAME" value="test7" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.RegisterCase.html">
     <configuration name="1_htmltest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/1_htmltest.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="2_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/2_table.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="3_form.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/3_form.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/RegisterCase.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="TravelCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/TravelCase.html" useBuiltInWebServerPort="true">
@@ -127,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.RegisterCase.html" />
+        <item itemvalue="JavaScript Debug.3_form.html" />
         <item itemvalue="JavaScript Debug.TravelCase.html" />
         <item itemvalue="JavaScript Debug.2_table.html" />
         <item itemvalue="JavaScript Debug.1_htmltest.html" />
-        <item itemvalue="JUnit.JDBCTemplateTest2.test7" />
-        <item itemvalue="JUnit.JDBCTemplateTest2.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +225,8 @@
       <workItem from="1584584604307" duration="6814000" />
       <workItem from="1584604605539" duration="4797000" />
       <workItem from="1584672560135" duration="3653000" />
-      <workItem from="1584689593344" duration="3834000" />
+      <workItem from="1584689593344" duration="7419000" />
+      <workItem from="1584786852519" duration="1018000" />
     </task>
     <servers />
   </component>

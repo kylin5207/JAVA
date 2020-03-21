@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单学习</title>
+</head>
+
+<body>
+    <!-- action:指定提交数据的URL -->
+    <form action="#" method="get">
+        <label for="username">用户名：</label>
+        <input type="text" name="username" id="username" placeholder="请输入用户名"> <br>
+
+        <label for="pwd">密码：</label>
+        <input type="password" name="password" id="pwd" placeholder="请输入密码"> <br>
+
+        <!--radio单选框-->
+        <label>性别：</label>
+        <input type="radio" name="gender" id="gender" value="male" checked>男
+        <input type="radio" name="gender" id="gender" value="female">女 <br>
+        
+        <!--checkbox多选框-->
+        <label>爱好：</label>
+        <input type="checkbox" value="shopping" name="hobby" id="shopping">购物
+        <input type="checkbox" value="game" name="hobby" id="game">游戏
+        <input type="checkbox" value="car" name="hobby" id="car">豪车
+        <br>
+
+        <!--file文件选择框-->
+        <label for="userpic">用户头像</label>
+        <input type="file" id="userpic">
+        <br>
+
+        <!--hidden隐藏区域-->
+        <input type="hidden" value="隐藏信息看不到" name="hidden">
+        <br>
+
+        <!--取色器-->
+        <label for="colorpick">取色器：</label>
+        <input type="color" id="colorpick" name="color">
+        <br>
+
+        <label for="birthday">生日：</label>
+        <input type="date" id="birthday">
+        <br>
+
+        <label for="email">邮箱：</label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <!--select下拉列表-->
+        <label for="province">省份：</label>
+        <select name="province" id="province">
+            <option value="">请选择</option>
+            <option value="henan">河南</option>
+            <option value="shanghai">上海</option>
+            <option value="hebei">河北</option>
+            <option value="hainan">海南</option>
+        </select>
+        <br>
+
+        <label for="brief">简介：</label> <br>
+        <textarea name="brief" id="brief" cols="30" rows="10" placeholder="请输入自我介绍"></textarea>
+
+        <br>
+        <input type="submit" value="注册">
+
+
+    </form>
+</body>
+
+</html>
