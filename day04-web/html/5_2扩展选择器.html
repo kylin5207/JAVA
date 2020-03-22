@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+        div p{
+            color: red;
+        }
+
+        div > p {
+            background-color: gray;
+        }
+
+        input[type="text"] {
+            color: red;
+        }
+
+        a:link{
+            color: pink;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        a:visited{
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Kylin
+        </p>
+    </div>
+
+    <p>
+        Kylin
+    </p>
+
+    <p>
+        <input type="text" name="username" id="username" placeholder="请输入用户名"><br>
+
+        <input type="password" name="password" id="password" placeholder="请输入密码"><br>
+
+        <a href="#">kylin中心</a>
+    </p>
+
+</body>
+</html>

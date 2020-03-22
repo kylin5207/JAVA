@@ -66,6 +66,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day04-web/html" />
       <recent name="$PROJECT_DIR$/day04-web/src/img" />
       <recent name="$PROJECT_DIR$/day03-code" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
@@ -84,29 +85,29 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.RegisterCase.html">
-    <configuration name="1_htmltest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/1_htmltest.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.5_2扩展选择器.html">
+    <configuration name="4_css_html2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/4_css_html2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="2_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/2_table.html" useBuiltInWebServerPort="true">
+    <configuration name="4_css_html.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/4_css_html.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="3_form.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/3_form.html" useBuiltInWebServerPort="true">
+    <configuration name="5_1基础选择器.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/5_1基础选择器.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="5_2扩展选择器.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/5_2扩展选择器.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="RegisterCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/RegisterCase.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="TravelCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/TravelCase.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.5_2扩展选择器.html" />
+        <item itemvalue="JavaScript Debug.5_1基础选择器.html" />
+        <item itemvalue="JavaScript Debug.4_css_html2.html" />
+        <item itemvalue="JavaScript Debug.4_css_html.html" />
         <item itemvalue="JavaScript Debug.RegisterCase.html" />
-        <item itemvalue="JavaScript Debug.3_form.html" />
-        <item itemvalue="JavaScript Debug.TravelCase.html" />
-        <item itemvalue="JavaScript Debug.2_table.html" />
-        <item itemvalue="JavaScript Debug.1_htmltest.html" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +227,8 @@
       <workItem from="1584604605539" duration="4797000" />
       <workItem from="1584672560135" duration="3653000" />
       <workItem from="1584689593344" duration="7419000" />
-      <workItem from="1584786852519" duration="1018000" />
+      <workItem from="1584786852519" duration="1330000" />
+      <workItem from="1584843307567" duration="2596000" />
     </task>
     <servers />
   </component>
