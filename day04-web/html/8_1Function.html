@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function对象</title>
+
+    <script>
+    /*
+        Function:函数(⽅法)对象
+        1. 创建:
+            第一种：
+            function ⽅法名称(形式参数列表){
+                ⽅法体
+            }
+            第二种：
+            var 方法名 = function(参数列表){
+                方法体
+            }
+        2. 调用：
+            ⽅法名称(实际参数列表);
+        3. length:代表形参的个数
+
+     */
+
+    function func1(a, b) {
+        alert(a+b);
+    }
+
+    var func2 = function(a,b){
+        alert(a*b);
+    }
+
+    function Sum(){
+        var sum = 0;
+        var i;
+        for(i = 0; i < arguments.length; i++) {
+            sum += arguments[i];
+        }
+        alert("Sum = " + sum);
+    }
+
+    // func1(1,2);
+    // func2(2,2);
+    Sum(1,2,3,4)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

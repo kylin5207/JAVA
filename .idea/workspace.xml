@@ -86,29 +86,29 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.7_multiplyTable.html">
-    <configuration name="5_1基础选择器.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/5_1基础选择器.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="5_2扩展选择器.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/5_2扩展选择器.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.8_3Date.html">
     <configuration name="6_js基础.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/6_js基础.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="7_multiplyTable.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/7_multiplyTable.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="RegisterCase2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/RegisterCase2.html" useBuiltInWebServerPort="true">
+    <configuration name="8_1Function.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_1Function.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="8_2Array.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_2Array.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="8_3Date.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_3Date.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.8_3Date.html" />
+        <item itemvalue="JavaScript Debug.8_2Array.html" />
+        <item itemvalue="JavaScript Debug.8_1Function.html" />
         <item itemvalue="JavaScript Debug.7_multiplyTable.html" />
         <item itemvalue="JavaScript Debug.6_js基础.html" />
-        <item itemvalue="JavaScript Debug.RegisterCase2.html" />
-        <item itemvalue="JavaScript Debug.5_2扩展选择器.html" />
-        <item itemvalue="JavaScript Debug.5_1基础选择器.html" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +230,8 @@
       <workItem from="1584689593344" duration="7419000" />
       <workItem from="1584786852519" duration="1330000" />
       <workItem from="1584843307567" duration="6698000" />
-      <workItem from="1584929975182" duration="1944000" />
+      <workItem from="1584929975182" duration="2004000" />
+      <workItem from="1584969921751" duration="2110000" />
     </task>
     <servers />
   </component>
@@ -377,10 +378,10 @@
     </state>
     <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1584672681856" />
     <state x="114" y="62" key="new project wizard/0.23.1440.794@0.23.1440.794" timestamp="1583767642406" />
-    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup" timestamp="1583839495419">
+    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup" timestamp="1584970657600">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583839495419" />
+    <state x="407" y="137" width="670" height="764" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1584970657600" />
     <state x="407" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1581159038528" />
   </component>
   <component name="XDebuggerManager">
