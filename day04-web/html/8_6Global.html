@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global对象</title>
+
+    <script>
+        /*
+            全局对象，
+            1. 这个Global中封装的方法不需要对象就可以直接调用。方法名();
+            2. 方法:
+                encodeURI():url编码     decodeURI():url解码
+                encodeURIComponent():url编码,编码的字符更多        decodeURIComponent():url解码
+                parseInt():将字符串串转为数字
+                    逐⼀判断每⼀个字符是否是数字，直到不是数字为止，将前边数字部分转为一个number
+                isNaN():判断⼀个值是否是NaN
+                    NaN六亲不认，连自⼰都不认。NaN参与的==比较全部为false
+                eval():将JavaScript 字符串，并把它作为脚本代码来执⾏。
+         */
+
+        var webstr = "http://www.baidu.com?wd=网易";
+        var encodestr = encodeURI(webstr);
+        var decodestr = decodeURI(encodestr);
+        document.write(encodestr + "<br>");
+        document.write(decodestr + "<br>");
+
+        var encodestr2 = encodeURIComponent(webstr);
+        var decodestr2 = decodeURIComponent(encodestr2);
+        document.write(encodestr2 + "<br>");
+        document.write(decodestr2 + "<br>");
+
+        var int = parseInt("123cc");
+        document.write(int + "<br>");
+
+        var double = parseFloat("12.22cc");
+        document.write(double + "<br>");
+
+        var str = NaN;
+
+        document.write((str == NaN) + "<br>");
+        document.write(isNaN(str) + "<br>");
+
+        var jscode = "alert(\"kylin\");";
+        eval(jscode);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
