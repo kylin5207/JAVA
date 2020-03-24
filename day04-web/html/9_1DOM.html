@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM学习</title>
+
+
+</head>
+<body>
+    <img id="bulb" src="../src/image/bulb/on.gif" alt="灯泡">
+
+    <h1 id="headline">Kylin</h1>
+
+    <script>
+        /*
+        DOM：控制html文档的内容
+            1. 获取⻚面标签(元素)对象:Element
+                document.getElementById("id值"):通过元素的id获取元素对象
+
+            2. 操作Element对象:
+                1. 修改属性值:
+                    1. 明确获取的对象是哪⼀一个?
+                    2. 查看API⽂档，找其中有哪些属性可以设置
+                2. 修改标签体内容:
+                    属性:innerHTML
+                    1. 获取元素对象
+                    2. 使⽤innerHTML属性修改标签体内容
+         */
+        // var bulb = document.getElementById("bulb");
+        // bulb.src = "../src/image/bulb/off.gif";
+        // alert(bulb);
+
+        alert("内容改变");
+        var h1 = document.getElementById("headline");
+        h1.innerHTML = "帅琦";
+    </script>
+
+</body>
+</html>

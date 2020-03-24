@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灯泡开关案例</title>
+
+</head>
+<body>
+
+    <img id="bulb" src="../src/image/bulb/off.gif" alt="灯泡">
+
+    <script>
+        var flag = false;
+
+        var bulb = document.getElementById("bulb");
+
+        function fun() {
+            if(flag) {
+                bulb.src = "../src/image/bulb/off.gif";
+                flag = false;
+            }
+            else {
+                bulb.src = "../src/image/bulb/on.gif";
+                flag = true;
+            }
+        }
+
+        bulb.onclick = fun;
+
+    </script>
+
+</body>
+</html>

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day04-web/src/image/bulb/off.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-web/src/image/bulb/on.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +54,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-web/src/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-web/src/image/bulb" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -77,6 +79,7 @@
       <recent name="JDBCTest.SpringJDBC" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day04-web/src/image/bulb" />
       <recent name="$PROJECT_DIR$/day04-web/src/image" />
       <recent name="$PROJECT_DIR$/day03-code/lib" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
@@ -86,13 +89,7 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.8_6Global.html">
-    <configuration name="8_2Array.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_2Array.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="8_3Date.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_3Date.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.BulbCase.html">
     <configuration name="8_4Math.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_4Math.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -102,13 +99,19 @@
     <configuration name="8_6Global.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_6Global.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="9_1DOM.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_1DOM.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="BulbCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/BulbCase.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.BulbCase.html" />
+        <item itemvalue="JavaScript Debug.9_1DOM.html" />
         <item itemvalue="JavaScript Debug.8_6Global.html" />
         <item itemvalue="JavaScript Debug.8_5RegExp.html" />
         <item itemvalue="JavaScript Debug.8_4Math.html" />
-        <item itemvalue="JavaScript Debug.8_3Date.html" />
-        <item itemvalue="JavaScript Debug.8_2Array.html" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +235,8 @@
       <workItem from="1584843307567" duration="6698000" />
       <workItem from="1584929975182" duration="2004000" />
       <workItem from="1584969921751" duration="2361000" />
-      <workItem from="1585017199312" duration="3885000" />
+      <workItem from="1585017199312" duration="5363000" />
+      <workItem from="1585034985572" duration="1245000" />
     </task>
     <servers />
   </component>
