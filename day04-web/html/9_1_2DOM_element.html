@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element对象</title>
+</head>
+<body>
+
+    <a href="#">qiuqiuqiu</a>
+
+    <input type="button" value="设置链接" id="btn_set">
+    <input type="button" value="删除链接" id="btn_remove">
+
+
+    <script>
+    /*
+        Element:元素对象
+        1. 获取/创建:通过document来获取和创建
+        2. 方法:
+            1. removeAttribute():删除属性
+            2. setAttribute():设置属性
+     */
+
+    var btn = document.getElementById("btn_set");
+    btn.onclick = function () {
+        var element_a = document.getElementsByTagName("a")[0];
+        element_a.setAttribute("href", "http://www.baidu.com");
+    }
+
+    var btn2 = document.getElementById("btn_remove");
+    btn2.onclick = function () {
+        var element_a = document.getElementsByTagName("a")[0];
+        element_a.removeAttribute("href");
+    }
+
+
+
+    </script>
+</body>
+</html>
