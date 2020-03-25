@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day04-web/html/9_1_3DOM_Node.html" beforeDir="false" afterPath="$PROJECT_DIR$/day04-web/html/9_1_3DOM_Node.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-web/src/image/bulb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-web/html/动态表格案例" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -71,36 +70,36 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/day04-web/html" />
+      <recent name="$PROJECT_DIR$/day04-web/html" />
       <recent name="$PROJECT_DIR$/day04-web/src/img" />
       <recent name="$PROJECT_DIR$/day03-code" />
-      <recent name="$PROJECT_DIR$/day03-code/src" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="JDBCTest.SpringJDBC" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day04-web/html/动态表格案例" />
       <recent name="$PROJECT_DIR$/day04-web/src/image/bulb" />
       <recent name="$PROJECT_DIR$/day04-web/src/image" />
       <recent name="$PROJECT_DIR$/day03-code/lib" />
       <recent name="$PROJECT_DIR$/day03-code/src" />
-      <recent name="$PROJECT_DIR$/day03-code/lib" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.动态表格html页面.html">
-    <configuration name="9_1_1DOM_document.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_1_1DOM_document.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.9_5HTMLDOM.html">
     <configuration name="9_1_2DOM_element.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_1_2DOM_element.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="9_1_3DOM_Node.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_1_3DOM_Node.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="9_4_1BOM_History.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_4_1BOM_History.html" useBuiltInWebServerPort="true">
+    <configuration name="9_5HTMLDOM.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_5HTMLDOM.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="动态表格html页面2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/动态表格案例/动态表格html页面2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="动态表格html页面.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/动态表格案例/动态表格html页面.html" useBuiltInWebServerPort="true">
@@ -108,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.9_5HTMLDOM.html" />
+        <item itemvalue="JavaScript Debug.动态表格html页面2.html" />
         <item itemvalue="JavaScript Debug.动态表格html页面.html" />
         <item itemvalue="JavaScript Debug.9_1_3DOM_Node.html" />
         <item itemvalue="JavaScript Debug.9_1_2DOM_element.html" />
-        <item itemvalue="JavaScript Debug.9_1_1DOM_document.html" />
-        <item itemvalue="JavaScript Debug.9_4_1BOM_History.html" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +238,8 @@
       <workItem from="1585017199312" duration="5363000" />
       <workItem from="1585034985572" duration="1323000" />
       <workItem from="1585102441672" duration="6112000" />
-      <workItem from="1585121831767" duration="4161000" />
+      <workItem from="1585121831767" duration="4262000" />
+      <workItem from="1585141455580" duration="1862000" />
     </task>
     <servers />
   </component>
