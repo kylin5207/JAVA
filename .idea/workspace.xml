@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day04-web/html/9_1DOM.html" beforeDir="false" afterPath="$PROJECT_DIR$/day04-web/html/9_1DOM.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04-web/html/9_1_3DOM_Node.html" beforeDir="false" afterPath="$PROJECT_DIR$/day04-web/html/9_1_3DOM_Node.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.9_1_3DOM_Node.html">
+  <component name="RunManager" selected="JavaScript Debug.动态表格html页面.html">
     <configuration name="9_1_1DOM_document.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_1_1DOM_document.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -103,16 +103,16 @@
     <configuration name="9_4_1BOM_History.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_4_1BOM_History.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="AutoSkip.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/AutoSkip.html" useBuiltInWebServerPort="true">
+    <configuration name="动态表格html页面.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/动态表格案例/动态表格html页面.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.动态表格html页面.html" />
         <item itemvalue="JavaScript Debug.9_1_3DOM_Node.html" />
         <item itemvalue="JavaScript Debug.9_1_2DOM_element.html" />
         <item itemvalue="JavaScript Debug.9_1_1DOM_document.html" />
         <item itemvalue="JavaScript Debug.9_4_1BOM_History.html" />
-        <item itemvalue="JavaScript Debug.AutoSkip.html" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +239,7 @@
       <workItem from="1585017199312" duration="5363000" />
       <workItem from="1585034985572" duration="1323000" />
       <workItem from="1585102441672" duration="6112000" />
-      <workItem from="1585121831767" duration="2026000" />
+      <workItem from="1585121831767" duration="4161000" />
     </task>
     <servers />
   </component>
