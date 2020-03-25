@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window对象的open方法练习</title>
+</head>
+<body>
+    <input type="button" id="openBtn" value="打开窗口">
+    <input type="button" id="closeBtn" value="关闭窗口">
+
+
+    <script>
+        var openBtn = document.getElementById("openBtn");
+        var newWindow;
+        openBtn.onclick = function () {
+            //打开新窗口
+            //open()方法会返回一个新的Window对象
+            newWindow = open("http://www.baidu.com");
+        }
+
+        var closeBtn = document.getElementById("closeBtn");
+        closeBtn.onclick = function () {
+            //关闭新窗口
+            //谁调用close，就会关掉谁
+            newWindow.close();
+        }
+
+
+    </script>
+</body>
+</html>

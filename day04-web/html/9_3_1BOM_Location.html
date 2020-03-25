@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOMLocation地址栏对象</title>
+</head>
+<body>
+    <input type="button" value="刷新页面" id="button">
+    <input type="button" value="百度一下" id="gobtn">
+    <script>
+        /*
+        Location对象：
+        1. 创建(获取):
+            1. window.location
+            2. location
+        2. 方法:
+            reload() 重新加载当前文档。刷新
+        3. 属性
+            href 设置或返回完整的 URL。
+
+         */
+        var btn = document.getElementById('button');
+        var gobtn = document.getElementById('gobtn');
+
+        btn.onclick = function(){
+            location.reload();
+        }
+
+        gobtn.onclick = function() {
+            location.href = "http://www.baidu.com";
+        }
+
+
+    </script>
+</body>
+</html>

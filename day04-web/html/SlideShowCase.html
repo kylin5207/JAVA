@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图案例</title>
+
+    <link rel="stylesheet" href="../css/SlideShow.css">
+</head>
+<body>
+    <div>
+        <img src="../src/image/slideshow_image/banner_1.jpg" alt="图片"id="pic">
+    </div>
+
+    <script>
+        /*
+            1. 在页面上使用img标签展示图片
+            2. 定义一个方法，修改图片的src属性
+            3. 设置一个定时器，每隔3s调用一次方法
+         */
+        var number = 0;
+
+        function changePic(){
+            number++;
+            var img = document.getElementById("pic");
+            img.src = "../src/image/slideshow_image/banner_" + (number % 3 + 1)  + ".jpg";
+        }
+
+        setInterval(changePic, 3000);
+    </script>
+</body>
+</html>

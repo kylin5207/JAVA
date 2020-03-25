@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOMHistory历史记录对象</title>
+</head>
+<body>
+    <input type="button" id="btn" value="获取当前窗口的历史记录个数"><br>
+    <a href="SlideShowCase.html">新页面</a><br>
+    <input type="button" id="forwardbtn" value="前进"><br>
+    <input type="button" id="backwardbtn" value="后退">
+    <script>
+        /*
+            History历史记录对象：
+            1. 创建(获取):
+                1. window.history
+                2. history
+            2. 方法:
+            * back() 加载 history 列表中的前一个 URL。
+            * forward() 加载 history 列表中的下一个 URL。
+            * go(参数) 加载 history 列表中的某个具体⻚面。
+                 参数:
+                    正数:前进⼏个历史记录
+                    负数:后退几个历史记录
+            3. 属性:
+                length 返回当前窗⼝历史列表中的 URL 数量
+         */
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            alert(history.length);
+        }
+
+        var forwardbtn = document.getElementById("forwardbtn");
+        forwardbtn.onclick = function () {
+            history.forward();
+        }
+
+        var backwardbtn = document.getElementById("backwardbtn");
+        backwardbtn.onclick = function () {
+            history.back();
+        }
+
+    </script>
+</body>
+</html>

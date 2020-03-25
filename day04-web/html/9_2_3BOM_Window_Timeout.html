@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>与定时器有关的方法练习</title>
+</head>
+<body>
+
+    <script>
+        /*
+             与定时器器有关的⽅法
+                setTimeout() 在指定的毫秒数后调⽤函数或计算表达式。
+                    参数:
+                     1. js代码或者⽅法对象 2. 毫秒值
+                     返回值:唯一标识，用于取消定时器
+                clearTimeout() 取消由 setTimeout() 方法设置的 timeout。
+                setInterval() 按照指定的周期(以毫秒计)来调⽤函数或计算表达式。
+                clearInterval() 取消由 setInterval() 设置的 timeout。
+         */
+
+        // var tid = setTimeout(fun, 1000);
+        // clearTimeout(tid);
+        function fun() {
+            alert('hello,kylin');
+        }
+
+        var tid2 = setInterval(fun, 10000);
+        clearInterval(tid2);
+    </script>
+</body>
+</html>

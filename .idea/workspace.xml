@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day04-web/src/image/bulb/off.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-web/src/image/bulb/on.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +23,7 @@
         <option value="AnnotationType" />
         <option value="Class" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -55,6 +54,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-web/src/image/bulb" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -89,29 +89,29 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.BulbCase.html">
-    <configuration name="8_4Math.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_4Math.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.9_4_1BOM_History.html">
+    <configuration name="9_2_4BOM_Window_history.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_2_4BOM_Window_history.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="8_5RegExp.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_5RegExp.html" useBuiltInWebServerPort="true">
+    <configuration name="9_3_1BOM_Location.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_3_1BOM_Location.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="8_6Global.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/8_6Global.html" useBuiltInWebServerPort="true">
+    <configuration name="9_4_1BOM_History.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_4_1BOM_History.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="9_1DOM.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_1DOM.html" useBuiltInWebServerPort="true">
+    <configuration name="AutoSkip.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/AutoSkip.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="BulbCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/BulbCase.html" useBuiltInWebServerPort="true">
+    <configuration name="SlideShowCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/SlideShowCase.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.BulbCase.html" />
-        <item itemvalue="JavaScript Debug.9_1DOM.html" />
-        <item itemvalue="JavaScript Debug.8_6Global.html" />
-        <item itemvalue="JavaScript Debug.8_5RegExp.html" />
-        <item itemvalue="JavaScript Debug.8_4Math.html" />
+        <item itemvalue="JavaScript Debug.9_4_1BOM_History.html" />
+        <item itemvalue="JavaScript Debug.AutoSkip.html" />
+        <item itemvalue="JavaScript Debug.9_3_1BOM_Location.html" />
+        <item itemvalue="JavaScript Debug.9_2_4BOM_Window_history.html" />
+        <item itemvalue="JavaScript Debug.SlideShowCase.html" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +236,8 @@
       <workItem from="1584929975182" duration="2004000" />
       <workItem from="1584969921751" duration="2361000" />
       <workItem from="1585017199312" duration="5363000" />
-      <workItem from="1585034985572" duration="1245000" />
+      <workItem from="1585034985572" duration="1323000" />
+      <workItem from="1585102441672" duration="6006000" />
     </task>
     <servers />
   </component>
