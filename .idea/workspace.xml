@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day04-web/html/9_6_1焦点事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-web/html/9_6_2加载事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-web/html/9_6_3鼠标事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-web/html/9_6_4键盘事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-web/html/9_6_5选择和改变事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-web/html/9_6_6表单事件.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,19 +80,16 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/day04-web/html/动态表格案例" />
+      <recent name="$PROJECT_DIR$/day04-web/html/动态表格案例" />
       <recent name="$PROJECT_DIR$/day04-web/src/image/bulb" />
       <recent name="$PROJECT_DIR$/day04-web/src/image" />
       <recent name="$PROJECT_DIR$/day03-code/lib" />
-      <recent name="$PROJECT_DIR$/day03-code/src" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.9_6_6表单事件.html">
-    <configuration name="9_6_2加载事件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_6_2加载事件.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.表格全选.html">
     <configuration name="9_6_3鼠标事件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_6_3鼠标事件.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -111,13 +102,16 @@
     <configuration name="9_6_6表单事件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_6_6表单事件.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="表格全选.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/动态表格案例/表格全选.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.表格全选.html" />
         <item itemvalue="JavaScript Debug.9_6_6表单事件.html" />
         <item itemvalue="JavaScript Debug.9_6_5选择和改变事件.html" />
         <item itemvalue="JavaScript Debug.9_6_4键盘事件.html" />
         <item itemvalue="JavaScript Debug.9_6_3鼠标事件.html" />
-        <item itemvalue="JavaScript Debug.9_6_2加载事件.html" />
       </list>
     </recent_temporary>
   </component>
@@ -247,6 +241,7 @@
       <workItem from="1585121831767" duration="4262000" />
       <workItem from="1585141455580" duration="3840000" />
       <workItem from="1585190385450" duration="1749000" />
+      <workItem from="1585192141099" duration="1609000" />
     </task>
     <servers />
   </component>
