@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交事件</title>
+    <script>
+        /*
+            表单事件：
+                onsubmit 确认按钮被点击
+         */
+        window.onload = function () {
+            document.getElementById("form").onsubmit = function () {
+                var flag = true;
+
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" id="form">
+        <input type="text" id="username"><br>
+
+        <select name="city" id="city">
+            <option value="0" selected>---请选择---</option>
+            <option value="1" >北京</option>
+            <option value="2">上海</option>
+            <option value="3">河南</option>
+        </select>
+
+        <br>
+        <input type="submit" value="提交" id="button_submit">
+    </form>
+</body>
+</html>

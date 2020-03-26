@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标事件</title>
+    <script>
+        /*
+            鼠标事件：
+            1。 onmousedown  鼠标按钮被按下。
+            2. onmouseup    鼠标按键被松开。
+            3. onmousemove 鼠标被移动。
+            4. onmouseover 鼠标移到某元素之上。
+            5. onmouseout 鼠标从某元素移开
+
+         */
+        window.onload = function () {
+            var username = document.getElementById("username");
+            username.onmousemove = function () {
+                username.focus();
+            }
+
+            username.onmousedown = function (event) {
+                alert(event.button);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="username" placeholder="请输入用户名">
+</body>
+</html>

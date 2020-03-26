@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件</title>
+    <script>
+        /*
+             onkeydown   某个键盘按键被按下。
+         */
+        window.onload = function () {
+            document.getElementById("username").onkeydown = function (event) {
+                if(event.keyCode == 13) {
+                    alert("提交");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="username">
+</body>
+</html>

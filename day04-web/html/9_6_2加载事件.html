@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加载事件</title>
+    <script>
+        /*
+            加载事件
+            onload:⼀张⻚面或⼀幅图像完成加载。
+         */
+        window.onload = function () {
+            var username = document.getElementById("username");
+            username.onblur = function () {
+                alert(username.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="username" placeholder="请输入用户名">
+
+</body>
+</html>

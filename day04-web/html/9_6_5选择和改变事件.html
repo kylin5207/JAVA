@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择和改变事件</title>
+    <script>
+        /*
+            选择和改变事件：
+            1. onchange 域的内容被改变。
+            2. onselect ⽂文本被选中。
+         */
+        window.onload = function () {
+            document.getElementById("area").onchange = function () {
+                alert("文本改变了");
+            }
+
+            var city = document.getElementById("city");
+            city.onchange = function () {
+                alert(city.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <textarea name="area" id="area" cols="30" rows="20">Hello</textarea>
+
+    <select name="city" id="city">
+        <option value="0" selected>---请选择---</option>
+        <option value="1" >北京</option>
+        <option value="2">上海</option>
+        <option value="3">河南</option>
+    </select>
+
+
+</body>
+</html>

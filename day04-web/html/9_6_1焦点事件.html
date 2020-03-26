@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点事件</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="请输入用户名">
+
+    <script>
+        /*
+            焦点事件
+                1. onblur:失去焦点
+                2. onfocus:元素获得焦点
+         */
+        var username = document.getElementById("username");
+        username.onblur = function () {
+            alert("失去焦点");
+        }
+
+
+    </script>
+</body>
+</html>
