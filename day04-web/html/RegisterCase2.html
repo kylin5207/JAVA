@@ -6,6 +6,57 @@
 
     <link rel="stylesheet" href="../css/Register.css">
 
+    <script>
+        window.onload = function () {
+            document.getElementById("form").onsubmit = function () {
+                //调用每一个方法校验的结果
+                return checkUsername() && checkPassword();
+            }
+
+            document.getElementById("name").onblur = checkUsername;
+            document.getElementById("password").onblur = checkPassword;
+
+        }
+
+        function checkUsername() {
+            //获取用户名文本框元素
+            var name = document.getElementById("name").value;
+
+            //定义正则表达式
+            var reg_name = /^\w{6,12}$/;
+            //判断是否符合规则
+            var flag = reg_name.test(name);
+
+            var s_name = document.getElementById("s_name");
+            if(flag) {
+                s_name.innerHTML = "<img width='35' height='25' src='../src/image/register_image/gou.png'>"
+            }
+            else {
+                s_name.innerText = "用户名格式有误";
+            }
+            return flag;
+        }
+
+        function checkPassword() {
+            //获取用户名文本框元素
+            var password = document.getElementById("password").value;
+
+            //定义正则表达式
+            var reg_password = /^\w{6,12}$/;
+            //判断是否符合规则
+            var flag = reg_password.test(password);
+
+            var s_password = document.getElementById("s_password");
+            if(flag) {
+                s_password.innerHTML = "<img width='35' height='25' src='../src/image/register_image/gou.png'>"
+            }
+            else {
+                s_password.innerText = "密码格式有误";
+            }
+            return flag;
+        }
+    </script>
+
 </head>
 <body>
 
@@ -22,23 +73,27 @@
 
         <div class="register_middle">
             <div class="register_form">
-                <form action="">
+                <form action="#" id="form" method="get">
                     <table id="form_table">
                         <tr>
                             <td class="td_left">
                                 <label for="name">用户名</label>
+
                             </td>
                             <td class="td_right">
                                 <input type="text" name="name" id="name" placeholder="请输入用户名">
+                                <span id="s_name" class="error"></span>
                             </td>
                         </tr>
 
                         <tr>
                             <td class="td_left">
                                 <label for="password">密码</label>
+
                             </td>
                             <td class="td_right">
                                 <input type="password" name="password" id="password" placeholder="请输入密码">
+                                <span id="s_password" class="error"></span>
                             </td>
                         </tr>
                         <tr>
@@ -92,7 +147,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="center">
+                            <td colspan="2" id="td_sub">
                                 <input type="submit" value="注册" id="button_submit">
                             </td>
                         </tr>

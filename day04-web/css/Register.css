@@ -8,7 +8,7 @@ body{
 }
 
 .register_layout{
-    width:900px;
+    width:920px;
     height: 600px;
     border: 8px solid #EEEEEE;
     background-color: white;
@@ -34,8 +34,8 @@ body{
 
 .register_middle{
     float: left;
-    margin: 20px;
-    width:450px;
+    margin: 5px;
+    width:500px;
 }
 
 .td_left{
@@ -47,7 +47,7 @@ body{
 }
 
 .td_right{
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 #name, #password, #email, #username, #phonenumber, #birthday{
@@ -90,10 +90,19 @@ body{
 
 .register_right{
     float: right;
-    margin: 20px;
+    margin: 10px;
     font-size: 15px;
+}
+
+#td_sub{
+    padding-left: 150px;
 }
 
 .register_right a:link{
     color: lightpink;
+}
+
+.error{
+    color: red;
+    font-size: 16px;
 }
