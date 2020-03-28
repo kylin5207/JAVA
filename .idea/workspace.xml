@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day05-Bootstrap/day05-Bootstrap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day04-web/css/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/day04-web/css/Register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day04-web/html/RegisterCase2.html" beforeDir="false" afterPath="$PROJECT_DIR$/day04-web/html/RegisterCase2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-web/src/image/register_image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day05-Bootstrap/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -71,28 +71,28 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day04-web" />
       <recent name="$PROJECT_DIR$/day04-web/html" />
       <recent name="$PROJECT_DIR$/day04-web/html" />
       <recent name="$PROJECT_DIR$/day04-web/src/img" />
       <recent name="$PROJECT_DIR$/day03-code" />
-      <recent name="$PROJECT_DIR$/day03-code/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="JDBCTest.SpringJDBC" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day05-Bootstrap" />
       <recent name="$PROJECT_DIR$/day04-web/src/image/register_image" />
       <recent name="$PROJECT_DIR$/day04-web/html/动态表格案例" />
       <recent name="$PROJECT_DIR$/day04-web/html/动态表格案例" />
       <recent name="$PROJECT_DIR$/day04-web/src/image/bulb" />
-      <recent name="$PROJECT_DIR$/day04-web/src/image" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.RegisterCase2.html">
-    <configuration name="9_6_6表单事件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/9_6_6表单事件.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.01_Bootstrap_HelloWorld.html">
+    <configuration name="01_Bootstrap_HelloWorld.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/01_Bootstrap_HelloWorld.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="RegisterCase2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/RegisterCase2.html" useBuiltInWebServerPort="true">
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.01_Bootstrap_HelloWorld.html" />
         <item itemvalue="JavaScript Debug.RegisterCase2.html" />
         <item itemvalue="JavaScript Debug.RegisterCase.html" />
         <item itemvalue="JavaScript Debug.动态表格html页面.html" />
         <item itemvalue="JavaScript Debug.表格全选.html" />
-        <item itemvalue="JavaScript Debug.9_6_6表单事件.html" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +244,10 @@
       <workItem from="1585141455580" duration="3840000" />
       <workItem from="1585190385450" duration="1749000" />
       <workItem from="1585192141099" duration="1830000" />
-      <workItem from="1585277739814" duration="1765000" />
+      <workItem from="1585277739814" duration="1968000" />
+      <workItem from="1585367308551" duration="233000" />
+      <workItem from="1585380464445" duration="276000" />
+      <workItem from="1585382985236" duration="1163000" />
     </task>
     <servers />
   </component>
@@ -386,11 +389,11 @@
     <state x="624" y="23" width="816" height="729" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1582105042200" />
     <state x="386" y="57" width="667" height="729" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1581172707604" />
     <state x="624" y="23" width="816" height="732" key="find.popup/0.23.1440.801@0.23.1440.801" timestamp="1581252658600" />
-    <state x="114" y="72" key="new project wizard" timestamp="1584672681856">
+    <state x="114" y="72" key="new project wizard" timestamp="1585383269678">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1584672681856" />
-    <state x="114" y="62" key="new project wizard/0.23.1440.794@0.23.1440.794" timestamp="1583767642406" />
+    <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1585383269678" />
+    <state x="114" y="62" key="new project wizard/0.23.1440.794@0.23.1440.794" timestamp="1585367321344" />
     <state x="407" y="137" width="670" height="764" key="search.everywhere.popup" timestamp="1585017812586">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
