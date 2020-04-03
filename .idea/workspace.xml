@@ -89,13 +89,7 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.06_Bootstrap插件轮播图.html">
-    <configuration name="02_css.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/02_css.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="03_css2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/03_css2.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.TravelCase.html">
     <configuration name="04_导航条.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/04_导航条.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -105,13 +99,19 @@
     <configuration name="06_Bootstrap插件轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/06_Bootstrap插件轮播图.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="TravelCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/TravelCase.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="首页练习.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/首页练习.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.TravelCase.html" />
+        <item itemvalue="JavaScript Debug.首页练习.html" />
         <item itemvalue="JavaScript Debug.06_Bootstrap插件轮播图.html" />
         <item itemvalue="JavaScript Debug.05_分页条.html" />
         <item itemvalue="JavaScript Debug.04_导航条.html" />
-        <item itemvalue="JavaScript Debug.03_css2.html" />
-        <item itemvalue="JavaScript Debug.02_css.html" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +248,8 @@
       <workItem from="1585382985236" duration="1449000" />
       <workItem from="1585453049309" duration="4000" />
       <workItem from="1585453649940" duration="3000" />
-      <workItem from="1585883492382" duration="4846000" />
+      <workItem from="1585883492382" duration="7536000" />
+      <workItem from="1585920257714" duration="3002000" />
     </task>
     <servers />
   </component>
