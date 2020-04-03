@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d505e5e-5e92-4f3d-9ec2-1d79a78119ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day05-Bootstrap/day05-Bootstrap.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,17 +79,17 @@
       <recent name="JDBCTest.SpringJDBC" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day05-Bootstrap/js" />
       <recent name="$PROJECT_DIR$/day05-Bootstrap" />
       <recent name="$PROJECT_DIR$/day04-web/src/image/register_image" />
       <recent name="$PROJECT_DIR$/day04-web/html/动态表格案例" />
       <recent name="$PROJECT_DIR$/day04-web/html/动态表格案例" />
-      <recent name="$PROJECT_DIR$/day04-web/src/image/bulb" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.01_Bootstrap_HelloWorld.html">
+  <component name="RunManager" selected="JavaScript Debug.栅格系统.html">
     <configuration name="01_Bootstrap_HelloWorld.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/01_Bootstrap_HelloWorld.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -101,7 +99,7 @@
     <configuration name="RegisterCase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/RegisterCase.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="表格全选.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/动态表格案例/表格全选.html" useBuiltInWebServerPort="true">
+    <configuration name="栅格系统.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/栅格系统.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="动态表格html页面.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/动态表格案例/动态表格html页面.html" useBuiltInWebServerPort="true">
@@ -109,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.栅格系统.html" />
         <item itemvalue="JavaScript Debug.01_Bootstrap_HelloWorld.html" />
         <item itemvalue="JavaScript Debug.RegisterCase2.html" />
         <item itemvalue="JavaScript Debug.RegisterCase.html" />
         <item itemvalue="JavaScript Debug.动态表格html页面.html" />
-        <item itemvalue="JavaScript Debug.表格全选.html" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +245,10 @@
       <workItem from="1585277739814" duration="1968000" />
       <workItem from="1585367308551" duration="233000" />
       <workItem from="1585380464445" duration="276000" />
-      <workItem from="1585382985236" duration="1163000" />
+      <workItem from="1585382985236" duration="1449000" />
+      <workItem from="1585453049309" duration="4000" />
+      <workItem from="1585453649940" duration="3000" />
+      <workItem from="1585883492382" duration="822000" />
     </task>
     <servers />
   </component>
