@@ -89,29 +89,29 @@
       <recent name="AnnotationTest.AnnotationDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.03_css2.html">
-    <configuration name="01_Bootstrap_HelloWorld.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/01_Bootstrap_HelloWorld.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.06_Bootstrap插件轮播图.html">
     <configuration name="02_css.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/02_css.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="03_css2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/03_css2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="RegisterCase2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day04-web/html/RegisterCase2.html" useBuiltInWebServerPort="true">
+    <configuration name="04_导航条.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/04_导航条.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="栅格系统.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/栅格系统.html" useBuiltInWebServerPort="true">
+    <configuration name="05_分页条.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/05_分页条.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="06_Bootstrap插件轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaTestCode/day05-Bootstrap/06_Bootstrap插件轮播图.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.06_Bootstrap插件轮播图.html" />
+        <item itemvalue="JavaScript Debug.05_分页条.html" />
+        <item itemvalue="JavaScript Debug.04_导航条.html" />
         <item itemvalue="JavaScript Debug.03_css2.html" />
         <item itemvalue="JavaScript Debug.02_css.html" />
-        <item itemvalue="JavaScript Debug.栅格系统.html" />
-        <item itemvalue="JavaScript Debug.01_Bootstrap_HelloWorld.html" />
-        <item itemvalue="JavaScript Debug.RegisterCase2.html" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +248,7 @@
       <workItem from="1585382985236" duration="1449000" />
       <workItem from="1585453049309" duration="4000" />
       <workItem from="1585453649940" duration="3000" />
-      <workItem from="1585883492382" duration="3036000" />
+      <workItem from="1585883492382" duration="4846000" />
     </task>
     <servers />
   </component>
