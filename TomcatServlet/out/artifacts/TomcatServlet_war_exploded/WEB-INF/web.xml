@@ -9,8 +9,18 @@
         <servlet-class>web.servlet.ServletDemo</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>TomcatServletDemo2</servlet-name>
+        <servlet-class>web.servlet.ServletFunction</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>TomcatServletDemo</servlet-name>
         <url-pattern>/TomcatServletDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>TomcatServletDemo2</servlet-name>
+        <url-pattern>/TomcatServletDemo2</url-pattern>
     </servlet-mapping>
 </web-app>

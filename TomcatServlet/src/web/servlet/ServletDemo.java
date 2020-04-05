@@ -14,7 +14,7 @@ public class ServletDemo implements Servlet {
         return null;
     }
 
-    @Override
+    @Override //提供服务的方法
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         System.out.println("Hello, Servlet");
     }
