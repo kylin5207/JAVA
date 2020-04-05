@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/day04-web/day04-web.iml" filepath="$PROJECT_DIR$/day04-web/day04-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/day05-Bootstrap/day05-Bootstrap.iml" filepath="$PROJECT_DIR$/day05-Bootstrap/day05-Bootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/day06-Tomcat/day06-Tomcat.iml" filepath="$PROJECT_DIR$/day06-Tomcat/day06-Tomcat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day07-tomcat/day07-tomcat.iml" filepath="$PROJECT_DIR$/day07-tomcat/day07-tomcat.iml" />
     </modules>
   </component>
 </project>
