@@ -7,6 +7,7 @@ public class ServletFunction implements Servlet {
     /**
      * 初始化方法：
      * 在Servlet被创建时执行，只执行一次
+     * 可以指定Servlet的创建时机
      * @param servletConfig
      * @throws ServletException
      */
@@ -35,7 +36,7 @@ public class ServletFunction implements Servlet {
      */
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("--------servic()方法执行--------");
+        System.out.println("--------service()方法执行--------");
     }
 
     /**
@@ -50,6 +51,7 @@ public class ServletFunction implements Servlet {
 
     /**
      * 在Servlet被销毁时，即服务器关闭时执行
+     * 只有服务器正常关闭时，才会执行destroy方法
      * 只执行一次
      */
     @Override
