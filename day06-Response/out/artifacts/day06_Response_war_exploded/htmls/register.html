@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册表单</title>
+    <script>
+        /*
+            点击超链接，更换验证码图片
+            1. 给超链接和图片绑定单击事件
+
+            2. 重新设置img的src属性就可以
+         */
+        window.onload = function () {
+            var img = document.getElementById("checkCode");
+            img.onclick = function () {
+                // 一般在这里加时间戳，欺骗服务器
+                var date = new Date().getTime();
+                img.src = "/Response/checkCodeServlet?" + date;
+            }
+
+            var link = document.getElementById("change");
+            link.onclick = function () {
+                // 一般在这里加时间戳，欺骗服务器
+                var date = new Date().getTime();
+                img.src = "/Response/checkCodeServlet?" + date;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <img id="checkCode"  src="/Response/checkCodeServlet" alt="验证码">
+    <a id="change" href="">看不清，换一张</a>
+</body>
+</html>
