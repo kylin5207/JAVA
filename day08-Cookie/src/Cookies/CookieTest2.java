@@ -12,6 +12,7 @@ import java.io.IOException;
  * 注意：
  * 只有cookieTest1和cookieTest2在同一浏览器下打开时，才能获取到cookie值
  */
+
 @WebServlet("/cookieTest2")
 public class CookieTest2 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
