@@ -27,7 +27,6 @@ public class CookieTest1 extends HttpServlet {
         //2. 发送Cookie对象
         response.addCookie(c);
 
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
