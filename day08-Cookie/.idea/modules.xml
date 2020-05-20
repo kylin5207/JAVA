@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CookieTest/CookieTest.iml" filepath="$PROJECT_DIR$/CookieTest/CookieTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/day08-Cookie.iml" filepath="$PROJECT_DIR$/day08-Cookie.iml" />
     </modules>
   </component>
