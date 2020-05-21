@@ -9,7 +9,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Session:服务端会话技术
+ * Session:服务端会话技术,在一次会话的多次请求间共享数据，将数据保存在服务器端的对象HttpSession中
  *
  */
 @WebServlet("/sessionDemo1")
