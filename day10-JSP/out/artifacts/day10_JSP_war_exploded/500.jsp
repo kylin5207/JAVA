@@ -20,8 +20,10 @@
     </style>
 </head>
 <body class="middle">
-    <div class="middle">
-        <img src="pic/500.jpg" alt="服务器错误" width="800" height="500">
-    </div>
+    <img src="pic/500.jpg" alt="服务器错误" width="800" height="500">
+    <%
+        String message = exception.getMessage();
+        System.out.println(message);
+    %>
 </body>
 </html>

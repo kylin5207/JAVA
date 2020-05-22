@@ -19,7 +19,6 @@
 
     <%
       List list = new ArrayList<Integer>();
-      int i = 3 / 0;
     %>
   $END$
   </body>

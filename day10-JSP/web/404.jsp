@@ -20,6 +20,6 @@
     </style>
 </head>
 <body class="middle">
-    <img src="pic/404.jpg" alt="服务器错误" width="800" height="500">
+    <img src="pic/404.jpeg" alt="服务器错误" width="800" height="500">
 </body>
 </html>
