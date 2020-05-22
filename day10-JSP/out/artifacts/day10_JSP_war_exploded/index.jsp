@@ -10,6 +10,7 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" errorPage="500.jsp" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
   <head>
@@ -20,6 +21,7 @@
     <%
       List list = new ArrayList<Integer>();
     %>
+    
   $END$
   </body>
 </html>
