@@ -15,11 +15,14 @@
     <%
         request.setAttribute("name", "Kylin");
         session.setAttribute("age", "23");
+        session.setAttribute("name", "ysl");
     %>
 
     <%--2. 使用el获取值--%>
     ${requestScope.name}<br>
-    ${sessionScopeScope.age}<br>
+    ${sessionScope.age}<br>
+
+    name : ${name}
 
 
 </body>
