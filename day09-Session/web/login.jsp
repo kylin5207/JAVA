@@ -18,7 +18,7 @@
     </script>
 </head>
 <body>
-    <form action="/day09_Session/loginServlet" method="post">
+    <form action="${pageContext.request.contextPath}/loginServlet" method="post">
         <table>
 
             <tr>
