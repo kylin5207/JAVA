@@ -34,7 +34,7 @@
 
     %>
 
-    <c:if test="${not empty list }">hahaha</c:if>
+    <c:if test="${not empty list }">hahaha</c:if>   <br>
     <c:if test="${number%2 != 0}">
         ${number}为奇数
     </c:if>
