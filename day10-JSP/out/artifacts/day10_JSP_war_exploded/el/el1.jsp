@@ -18,5 +18,17 @@
     <h1>逻辑运算符</h1>
     3 > 4 and 3 < 2 ? ${3 > 4 and 3 < 2}
     3 > 4 && 3 < 2 ? ${3 > 4 && 3 < 2}
+
+    <h1>empty运算符</h1>
+    <%
+        String str1 = "abc";
+        request.setAttribute("str1", str1);
+        String str2 = "";
+        request.setAttribute("str2", str2);
+    %>
+
+    empty "abc" = ${empty str1}<br>
+    not empty "abc" = ${not empty str1}<br>
+    empty "" = ${empty str2}
 </body>
 </html>

@@ -11,7 +11,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>el表达式学习4——获取List o rmap集合</title>
+    <title>el表达式学习4——获取List or map集合</title>
 </head>
 <body>
 
@@ -36,7 +36,7 @@
     ${requestScope.list[0]}
 
     <h3>el获取Map值</h3>
-    ${map.first}
+    ${map.first}<br>
     ${map["second"]}
 
 </body>
