@@ -22,12 +22,11 @@
                   var：临时变量
                   step：步长
                   varStatus：循环状态对象
-                       index:容器中元素的索引
+                       index:容器中元素的索引，从0开始
                        count:循环次数，从1开始
             2. 遍历容器
                 items:容器对象
                 var:容器中元素的临时变量
-
     --%>
 
     <c:forEach begin="1" end="10" var="i" step="2" varStatus="s">
