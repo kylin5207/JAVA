@@ -12,6 +12,7 @@
 </head>
 <body>
 
-    ${pageContext.request.contextPath}
+    <h3>在jsp页面中动态获取虚拟目录</h3>
+    动态虚拟目录：${pageContext.request.contextPath}
 </body>
 </html>
