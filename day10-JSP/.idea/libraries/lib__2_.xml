@@ -2,6 +2,8 @@
   <library name="lib (2)">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/case/web/WEB-INF/lib" />
+      <root url="jar://$USER_HOME$/Library/apache-tomcat-8.5.53/lib/jsp-api.jar!/" />
+      <root url="jar://$USER_HOME$/Library/apache-tomcat-8.5.53/lib/servlet-api.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
