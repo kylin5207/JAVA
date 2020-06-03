@@ -62,7 +62,7 @@
     <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" >
             <span>&times;</span></button>
-        <strong>登录失败!</strong>
+        <strong>${login_msg}</strong>
     </div>
 </div>
 </body>

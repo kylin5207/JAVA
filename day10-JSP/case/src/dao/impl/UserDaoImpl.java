@@ -24,4 +24,16 @@ public class UserDaoImpl implements UserDao {
 
         return users;
     }
+
+    public User findUserByUsernameAndPassword(String username, String password){
+        try{
+            String sql = "select * from user where username = ? and password = ?";
+            User user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username, password);
+            return user;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
