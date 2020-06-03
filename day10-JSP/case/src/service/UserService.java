@@ -20,4 +20,6 @@ public interface UserService {
 
     //添加User
     public void addUser(User user);
+
+    public void deleteUser(String id);
 }
