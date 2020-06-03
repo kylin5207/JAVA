@@ -44,7 +44,7 @@
                 <input type="text" class="form-control" id="home" placeholder="河南">
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">邮箱</label>
                 <input type="email" class="form-control" id="email" placeholder="kylin@google.com">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
@@ -57,6 +57,7 @@
     </div>
     <table border="1" class="table table-bordered table-hover">
         <tr class="success">
+            <th><input type="checkbox"></th>
             <th>编号</th>
             <th>姓名</th>
             <th>性别</th>
@@ -69,6 +70,7 @@
 
         <c:forEach items="${requestScope.users}" var="user" varStatus="s">
             <tr>
+                <th><input type="checkbox"></th>
                 <td>${s.count}</td>
                 <td>${user.name}</td>
                 <td>${user.gender}</td>
@@ -100,6 +102,7 @@
                         <span aria-hidden="true">&raquo;</span>
                     </a>
                 </li>
+                <span style="font-size: 25px; margin-left: 5px">共16条记录，共4页</span>
             </ul>
         </nav>
     </div>
