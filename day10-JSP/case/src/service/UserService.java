@@ -14,5 +14,10 @@ public interface UserService {
      * @return
      */
     public List<User> findAll();
+
+    //用户登陆
     public User login(User user);
+
+    //添加User
+    public void addUser(User user);
 }
