@@ -110,7 +110,7 @@
                 <th>操作</th>
             </tr>
 
-            <c:forEach items="${requestScope.users}" var="user" varStatus="s">
+            <c:forEach items="${requestScope.pb.list}" var="user" varStatus="s">
                 <tr>
                     <th><input type="checkbox" name="uid" value="${user.id}"></th>
                     <td>${s.count}</td>
@@ -133,22 +133,34 @@
     <div>
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
+                <c:if test="${pb.currentPage == 1}">
+                    <li class="disabled">
+                </c:if>
+                <c:if test="${pb.currentPage != 1}">
+                    <li>
+
+                </c:if>
+
+                    <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage-1}&rows=5" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
+                <c:forEach begin="1" end="${pb.totalPage}" var = "i">
+                    <c:if test="${pb.currentPage == i}">
+                        <li class="active"><a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}&rows=5">${i}</a></li>
+                    </c:if>
+
+                    <c:if test="${pb.currentPage != i}">
+                        <li><a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}&rows=5">${i}</a></li>
+                    </c:if>
+                </c:forEach>
+
                 <li>
-                    <a href="#" aria-label="Next">
+                    <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage+1}&rows=5" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
                 </li>
-                <span style="font-size: 25px; margin-left: 5px">共16条记录，共4页</span>
+                <span style="font-size: 25px; margin-left: 5px">共${pb.totalCount}条记录，共${pb.totalPage}页</span>
             </ul>
         </nav>
     </div>

@@ -1,5 +1,6 @@
 package service;
 
+import domain.PageBean;
 import domain.User;
 
 import java.util.List;
@@ -41,4 +42,12 @@ public interface UserService {
      * @param ids
      */
     void delSelectedUser(String[] ids);
+
+    /**
+     * 分页查询
+     * @param currentPage
+     * @param rows
+     * @return
+     */
+    PageBean<User> findUserByPage(int currentPage, int rows);
 }
