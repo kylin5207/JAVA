@@ -66,15 +66,20 @@ public class UserServiceImpl implements UserService {
         int totalCount = dao.findTotalCount();
         pb.setTotalCount(totalCount);
 
+        // 5. 设置totalPage
+        int totalPage = (totalCount % rows) == 0 ? totalCount / rows : (totalCount / rows) + 1;
+        pb.setTotalPage(totalPage);
+        if (currentPage > totalPage){
+            currentPage = totalPage;
+            pb.setCurrentPage(currentPage);
+        }
         // 4. 调用dao查询list集合
         // 计算开始的索引
         int start = (currentPage-1) * rows;
         List<User> list = dao.findByPage(start, rows);
         pb.setList(list);
 
-        // 5. 设置totalPage
-        int totalPage = (totalCount % rows) == 0 ? totalCount / rows : (totalCount / rows) + 1;
-        pb.setTotalPage(totalPage);
+
         return pb;
     }
 }
