@@ -7,6 +7,7 @@ import domain.User;
 import service.UserService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 用户管理的业务接口的实现类
@@ -54,7 +55,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public PageBean<User> findUserByPage(int currentPage, int rows) {
+    public PageBean<User> findUserByPage(int currentPage, int rows, Map<String, String[]> condition) {
         // 1. 创建一个空的PageBean对象
         PageBean<User> pb = new PageBean<User>();
 
@@ -63,7 +64,7 @@ public class UserServiceImpl implements UserService {
         pb.setRows(rows);
 
         // 3. 调用dao查询totalCount
-        int totalCount = dao.findTotalCount();
+        int totalCount = dao.findTotalCount(condition);
         pb.setTotalCount(totalCount);
 
         // 5. 设置totalPage
@@ -76,7 +77,7 @@ public class UserServiceImpl implements UserService {
         // 4. 调用dao查询list集合
         // 计算开始的索引
         int start = (currentPage-1) * rows;
-        List<User> list = dao.findByPage(start, rows);
+        List<User> list = dao.findByPage(start, rows, condition);
         pb.setList(list);
 
 
