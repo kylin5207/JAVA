@@ -1,9 +1,9 @@
-package filter;
-
+package web.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
+
 
 /**
  * 过滤器入门：
