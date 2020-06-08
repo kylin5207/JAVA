@@ -11,6 +11,9 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  index.jsp...
+  <%
+    System.out.println("index.jsp...");
+  %>
   </body>
 </html>
