@@ -4,6 +4,12 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
+/**
+ * 过滤器执行流程：
+ * 1. 执行过滤器
+ * 2. 执行放行后的资源
+ * 3. 回来执行放行器下边的代码
+ */
 //@WebFilter("/*")
 public class FilterDemo2 implements Filter {
     public void destroy() {
