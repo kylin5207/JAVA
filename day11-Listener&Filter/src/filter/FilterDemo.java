@@ -23,7 +23,7 @@ import java.io.IOException;
  * 设置多种拦截方式时，使用{}包裹即可
  *
  */
-@WebFilter(value="/Hello.jsp", dispatcherTypes = {DispatcherType.FORWARD, DispatcherType.REQUEST})
+//@WebFilter(value="/Hello.jsp", dispatcherTypes = {DispatcherType.FORWARD, DispatcherType.REQUEST})
 public class FilterDemo implements Filter {
     public void destroy() {
     }
