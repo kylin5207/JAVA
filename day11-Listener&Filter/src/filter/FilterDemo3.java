@@ -8,7 +8,7 @@ import java.io.IOException;
  * Filter生命周期
  *
  */
-@WebFilter("/*")
+//@WebFilter("/*")
 public class FilterDemo3 implements Filter {
 
     /**
