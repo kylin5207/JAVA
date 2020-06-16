@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //获取所有ul下的li
+            var citys = $("#city li");
+
+            // 1. js的遍历方式
+            // for (var i = 0; i < citys.length; i++) {
+            //     //获取内容
+            //
+            //     if("上海" == citys[i].innerHTML){
+            //         break; // 结束循环
+            //     }
+            //
+            //     alert(i + " : " +citys[i].innerHTML);
+            // }
+
+            //2. JQuery对象.each(callback)遍历
+            // citys.each(function (i, e) {
+                //1. 获取li对象
+                //this就是集合中的每一个元素对象
+                // alert(this.innerHTML);
+
+                //2. 获取li对象的第二种方式
+                //function(index, element)
+                //index是索引，element是每个对象
+                // alert(i + " : " + e.innerHTML);
+            //     if("上海" == $(e).text()){
+            //         // 如果当前function返回false，则结束循环，相当于break；
+            //         // 返回true，则表示结束本次循环，继续下一次循环
+            //         return false;
+            //     }
+            //     alert(i + " : " + $(e).text());
+            // });
+            // 2. 全局遍历方式
+            // $.each(citys, function () {
+            //     alert($(this).text());
+            // });
+
+            // 3. for...of方式 3.0 版本之后提供的方式
+            for(li of citys){
+                alert($(li).text());
+            }
+        });
+
+    </script>
+</head>
+<body>
+<ul id="city">
+    <li>北京</li>
+    <li>上海</li>
+    <li>天津</li>
+    <li>重庆</li>
+</ul>
+</body>
+</html>
