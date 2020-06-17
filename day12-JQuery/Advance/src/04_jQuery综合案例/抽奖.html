@@ -35,7 +35,8 @@
                 //2. 给大相框设置src属性
                 $("#stopID").click(function () {
                     clearInterval(startID);
-                    $("#img2ID").prop("src", images[index]);
+                    $("#img2ID").prop("src", images[index]).hide();
+                    $("#img2ID").show(1000);
                     $("#startID").prop("disabled", false);
                     $("#stopID").prop("disabled", true);
                 });
