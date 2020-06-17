@@ -10,7 +10,25 @@
     <!--引入jquery-->
     <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
     <script>
+        /**
+         * 需求：
+         *      1. 当页面加载完，3s后，自动显示广告
+         *      2. 广告显示5s后，自动消失
+         */
+        $(function () {
+            //1. 使用定时器setTimeout
+            setTimeout(showAd(), 3000);
+            setTimeout(hideAd(), 8000);
+            //JQuery的显示和隐藏动画效果其实就是控制display
+        });
 
+        function showAd() {
+            $("#ad").fadeIn("slow");
+        }
+
+        function hideAd() {
+            $("#ad").fadeOut("slow");
+        }
     </script>
 </head>
 <body>
@@ -18,7 +36,7 @@
 <div>
     <!-- 广告DIV -->
     <div id="ad" style="display: none;">
-        <img style="width:100%" src="../img/adv.jpg" />
+        <img style="width:100%" src="../../img/adv.jpg" />
     </div>
 
     <!-- 下方正文部分 -->
