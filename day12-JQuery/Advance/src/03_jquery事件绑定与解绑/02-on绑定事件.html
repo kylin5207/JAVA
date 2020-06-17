@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn").on("click", function () {
+                alert("我被点击了");
+            });
+
+            //单击btn2，接触btn按钮的单击事件
+            //如果off⽅法不传递任何参数，则将组件上的所有事件全部解绑
+            $("#btn2").click(function () {
+                $("#btn").off("click");
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="使用on绑定点击事件">
+    <input id="btn2" type="button" value="使用off解绑点击事件">
+</body>
+</html>
