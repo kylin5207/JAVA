@@ -9,18 +9,19 @@
         function fun() {
             //使用$.ajax({键值对})发送异步请求
             $.ajax({
-                url:"ajaxServlet2", // 请求路径
+                url:"ajaxServlet", // 请求路径
                 type:"POST", //请求方式
                 // data: "username=帅琦&age=23", //请求参数
                 data:{"username":"帅琦", "age":23},
                 success:function (data) {
-                    //请求成功后的回调函数
+                    //请求响应成功后的回调函数
                     alert(data);
                 },
                 error:function () {
                     //请求响应出现错误会执行对回掉函数
                     alert("出错了");
-                }
+                },
+                dataType:"text"//预期服务器返回的数据类型。如果不指定，jQuery 将自动根据 HTTP 包 MIME 信息来智能判断
             });
         }
     </script>

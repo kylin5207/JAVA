@@ -15,11 +15,11 @@ public class ajaxServlet extends HttpServlet {
         String username = request.getParameter("username");
 
         //处理业务逻辑，较为耗时
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         System.out.println(username);
 
