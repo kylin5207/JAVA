@@ -35,7 +35,17 @@
             xhttp.send();
 
             //4. 接受并处理来自服务器的响应结果
+            //获取方式：xhttp.responseText
+            //当服务器响应成功后，再获取
 
+            //当xhttp对象的就绪状态改变时，会触发一个事件
+            xhttp.onreadystatechange = function() {
+                //判断readyState就绪状态是否为4，响应状态码是否为200
+                if (this.readyState == 4 && this.status == 200) {
+                    //获取服务器的响应结果
+                    alert(this.responseText);
+                }
+            };
         }
     </script>
 

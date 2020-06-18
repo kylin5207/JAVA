@@ -24,6 +24,7 @@ public class ajaxServlet extends HttpServlet {
         System.out.println(username);
 
         //2. 响应
+        response.setCharacterEncoding("utf-8");
         response.getWriter().write("hello : " + username);
     }
 
