@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json数据语法</title>
+    <script>
+        //1. 基本格式
+        //键名双引号,字段由逗号隔开，放在大括号中
+        var person = {"name":"帅琦", age:23, "gender":true};
+        // alert(person);
+
+        //2. 嵌套格式 {}->[]
+        var persons = {
+            "persons":[
+                {"name":"帅琦", age:23, "gender":true},
+                {"name":"帅林", age:23, "gender":true},
+                {"name":"Kylin", age:23, "gender":false}
+                ]
+        };
+        alert(persons)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
