@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json数据获取方式</title>
+    <script>
+        //1. 基本格式
+        //键名双引号,数据由逗号隔开，放在大括号中
+        var person = {"name":"帅琦", age:23, "gender":true};
+        // alert(person);
+
+        //获取name值 两种方式
+        // var name = person.name;
+        // var name = person["name"];
+        // alert(name);
+
+        //2. 嵌套格式 {}->[]
+        //[]中括号保存数组
+        // var persons = {
+        //     "persons":[
+        //         {"name":"帅琦", age:23, "gender":true},
+        //         {"name":"帅林", age:23, "gender":true},
+        //         {"name":"Kylin", age:23, "gender":false}
+        //         ]
+        // };
+
+        var persons = [
+                {"name":"帅琦", age:23, "gender":true},
+                {"name":"帅林", age:23, "gender":true},
+                {"name":"Kylin", age:23, "gender":false}
+            ];
+        // alert(persons)
+        //数组对象[索引]
+        // var name2 = persons.persons[1].name;
+        // alert(name2);
+
+        //json数据遍历
+        //获取person对象中所有的键和值
+        // for(var key in person){
+        //     //person.key获取不到，因为key是字符串格式的
+        //     //使用中括号的方式即可
+        //     alert(key + ":" + person[key]);
+        // }
+
+        //获取persons对象中所有的键和值
+        for(var i = 0; i < persons.length; i++){
+            var p = persons[i];
+            for(var key in p){
+                alert(key + " : " + p[key]);
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
