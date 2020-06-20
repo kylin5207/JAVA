@@ -8,6 +8,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * Jackson的使用：
@@ -51,6 +52,20 @@ public class JacksonTest {
         //3.2 writeValueAsString(obj):将对象转为json字符串
         String json = mapper.writeValueAsString(p);
         //{"name":"帅琦", "age":23, "gender":"男"}
+        System.out.println(json);
+    }
+
+    @Test
+    public void test2() throws IOException {
+        //1. 创建Person对象
+        Person p = new Person();
+        p.setName("帅琦");
+        p.setAge(23);
+        p.setGender("男");
+        p.setBirthday(new Date());
+
+        ObjectMapper mapper = new ObjectMapper();
+        String json = mapper.writeValueAsString(p);
         System.out.println(json);
     }
 

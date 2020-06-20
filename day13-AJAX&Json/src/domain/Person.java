@@ -1,12 +1,29 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.util.Date;
+
 public class Person {
     private String name;
     private int age;
     private String gender;
 
+//    @JsonIgnore //排除属性
+    @JsonFormat(pattern = "yyyy-MM-dd") //属性值得格式化
+    private Date birthday;
+
     public String getName() {
         return name;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public void setName(String name) {
@@ -35,6 +52,7 @@ public class Person {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
+                ", birthday=" + birthday +
                 '}';
     }
 }
