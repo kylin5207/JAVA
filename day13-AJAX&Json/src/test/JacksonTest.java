@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Date;
+import java.util.*;
 
 /**
  * Jackson的使用：
@@ -66,6 +66,54 @@ public class JacksonTest {
 
         ObjectMapper mapper = new ObjectMapper();
         String json = mapper.writeValueAsString(p);
+        System.out.println(json);
+    }
+
+    //复杂对象的转换——List
+    @Test
+    public void test3() throws IOException {
+        //复杂对象的转换
+        Person p1 = new Person();
+        p1.setName("帅琦");
+        p1.setAge(23);
+        p1.setGender("男");
+        p1.setBirthday(new Date());
+
+        Person p2 = new Person();
+        p2.setName("丑林");
+        p2.setAge(3);
+        p2.setGender("男");
+        p2.setBirthday(new Date());
+
+        Person p3 = new Person();
+        p3.setName("Kylin");
+        p3.setAge(8);
+        p3.setGender("男");
+        p3.setBirthday(new Date());
+
+        // 使用集合存储3个对象
+        List<Person> list = new ArrayList<Person>();
+        list.add(p1);
+        list.add(p2);
+        list.add(p3);
+
+
+        ObjectMapper mapper = new ObjectMapper();
+        String json = mapper.writeValueAsString(list);
+        System.out.println(json);
+    }
+
+    //复杂对象的转换——Map
+    @Test
+    public void test4() throws IOException {
+        //复杂对象的转换
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("name", "帅琦");
+        map.put("age", 13);
+        map.put("gender", "男");
+
+        ObjectMapper mapper = new ObjectMapper();
+        String json = mapper.writeValueAsString(map);
         System.out.println(json);
     }
 
