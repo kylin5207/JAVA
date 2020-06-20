@@ -117,4 +117,24 @@ public class JacksonTest {
         System.out.println(json);
     }
 
+    /**
+     * Json转java：
+     * 1. 导⼊jackson的相关jar包
+     * 2. 创建Jackson核⼼对象 ObjectMapper
+     * 3. 调⽤ObjectMapper的相关⽅法进行转换
+     *      readValue(json字符串串数据,Class)
+     */
+    @Test
+    public void test5() throws IOException {
+        // 1. 初始化json字符串
+        String json = "{\"name\":\"帅琦\",\"age\":23,\"gender\":\"男\",\"birthday\":\"2020-06-20\"}";
+
+        // 2. 创建ObjectMapper对象
+        ObjectMapper mapper = new ObjectMapper();
+
+        // 3. 使用readValue()将json字符串转换为Person对象
+        Person p = mapper.readValue(json, Person.class);
+        System.out.println(p);
+    }
+
 }
