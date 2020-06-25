@@ -19,7 +19,6 @@ public class UserDaoImpl implements UserDao {
 
             //2. 执行sql
             user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username);
-            System.out.println(user);
         }
         catch (Exception e){
             user = null;
