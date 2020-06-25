@@ -92,7 +92,6 @@
             <version>2.3.3</version>
         </dependency>
 
-
         <!--javaMail-->
         <dependency>
             <groupId>javax.mail</groupId>
@@ -137,7 +136,7 @@
                     <!-- 通过maven tomcat7:run运行项目时，访问项目的端口号 -->
                     <port>80</port>
                     <!-- 项目访问路径  本例：localhost:9090,  如果配置的aa， 则访问路径为localhost:9090/aa-->
-                    <path>/travel</path>
+                    <path>/</path>
                 </configuration>
             </plugin>
 
