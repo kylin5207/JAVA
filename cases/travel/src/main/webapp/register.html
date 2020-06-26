@@ -181,6 +181,11 @@
 
 					});
 				}
+				changeCode();
+			}
+
+			function changeCode(){
+				$("#checkCode").prop("src", "checkCode?"+new Date().getTime());
 			}
 		</script>
     </head>
@@ -266,13 +271,7 @@
     							</td>
     							<td class="td_right check">
     								<input type="text" id="check" name="check" class="check" onblur="checkCheck()">
-    								<img src="checkCode" height="32px" alt="" onclick="changeCheckCode(this)">
-									<script type="text/javascript">
-										//图片点击事件
-										function changeCheckCode(img) {
-											img.src="checkCode?"+new Date().getTime();
-                                        }
-									</script>
+    								<img id="checkCode" src="checkCode" height="32px" alt="" onclick="changeCode()">
     							</td>
     						</tr>
 						</table>

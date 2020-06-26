@@ -30,9 +30,6 @@ public class RegistUserServlet extends HttpServlet {
         //移除session中的验证码，保证验证码只能使用一次
         session.removeAttribute("CHECKCODE_SERVER");
 
-        System.out.println(check);
-        System.out.println(code);
-
         //比较
         if(code == null || !(code.equalsIgnoreCase(check))){
             //验证码校验失败
@@ -44,7 +41,6 @@ public class RegistUserServlet extends HttpServlet {
             ObjectMapper mapper = new ObjectMapper();
             String json = mapper.writeValueAsString(resultInfo);
 
-            System.out.println(json);
 
             //将json数据写回客户端
             //设置contentType
@@ -84,7 +80,6 @@ public class RegistUserServlet extends HttpServlet {
         //4. 将resultInfo序列化为json，并返回客户端
         ObjectMapper mapper = new ObjectMapper();
         String json = mapper.writeValueAsString(resultInfo);
-        System.out.println(json);
 
         //将json数据写回客户端
         //设置contentType
