@@ -65,4 +65,27 @@ public class UserDaoImpl implements UserDao {
         jdbcTemplate.update(sql, user.getUid());
 
     }
+
+    /**
+     * 根据用户名和密码查找用户
+     * @param username
+     * @param password
+     * @return
+     */
+    @Override
+    public User findByUsernameAndPassword(String username, String password) {
+        User user;
+        try{
+            //1. 定义sql语句
+            String sql = "select * from tab_user where username = ? and password = ?";
+
+            //2. 执行sql
+            user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username, password);
+        }
+        catch (Exception e){
+            user = null;
+        }
+
+        return user;
+    }
 }
