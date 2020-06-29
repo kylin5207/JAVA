@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/day03-code/JavaWeb.iml" filepath="$PROJECT_DIR$/day03-code/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/day01-code/day01-code.iml" filepath="$PROJECT_DIR$/day01-code/day01-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/day02-code/day02-NetworkProgramming.iml" filepath="$PROJECT_DIR$/day02-code/day02-NetworkProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/day04-web/day04-web.iml" filepath="$PROJECT_DIR$/day04-web/day04-web.iml" />
