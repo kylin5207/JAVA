@@ -85,6 +85,7 @@ public class LoginServlet extends HttpServlet {
             else{
                 //登陆成功
                 resultInfo.setFlag(true);
+                session.setAttribute("user", user);
             }
         }
 
