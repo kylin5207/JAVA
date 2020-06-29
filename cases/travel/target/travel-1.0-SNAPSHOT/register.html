@@ -177,11 +177,12 @@
 						} else {
 							//注册失败，给出相关提示信息
 							$("#errormsg").html(data.errorMsg);
+							changeCode();
+							$("#check").text("");
 						}
 
 					});
 				}
-				changeCode();
 			}
 
 			function changeCode(){

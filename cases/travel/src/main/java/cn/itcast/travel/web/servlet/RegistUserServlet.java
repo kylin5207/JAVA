@@ -29,6 +29,8 @@ public class RegistUserServlet extends HttpServlet {
 
         //移除session中的验证码，保证验证码只能使用一次
         session.removeAttribute("CHECKCODE_SERVER");
+        System.out.println("servercode = " + code);
+        System.out.println("code = " + check);
 
         //比较
         if(code == null || !(code.equalsIgnoreCase(check))){
