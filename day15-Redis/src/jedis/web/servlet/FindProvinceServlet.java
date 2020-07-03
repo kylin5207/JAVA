@@ -17,12 +17,15 @@ import java.util.List;
 public class FindProvinceServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //1. 调用Service查询
+//        ProvinceService service = new ProvinceServiceImpl();
+//        List<Province> list = service.findAll();
+//
+//        //2. 序列化list为Json
+//        ObjectMapper mapper = new ObjectMapper();
+//        String json = mapper.writeValueAsString(list);
         ProvinceService service = new ProvinceServiceImpl();
-        List<Province> list = service.findAll();
+        String json = service.findAllJson();
 
-        //2. 序列化list为Json
-        ObjectMapper mapper = new ObjectMapper();
-        String json = mapper.writeValueAsString(list);
         System.out.println(json);
 
         //3. 响应结果
