@@ -44,14 +44,16 @@ public class UserServlet extends BaseServlet {
             resultInfo.setErrorMsg("验证码输入错误");
 
             //将resultInfo序列化为json，并返回客户端
-            ObjectMapper mapper = new ObjectMapper();
-            String json = mapper.writeValueAsString(resultInfo);
+            this.writeValue(resultInfo, response);
+//            ObjectMapper mapper = new ObjectMapper();
+//            String json = mapper.writeValueAsString(resultInfo);
+//
+//
+//            //将json数据写回客户端
+//            //设置contentType
+//            response.setContentType("application/json;charset=utf-8");
+//            response.getWriter().write(json);
 
-
-            //将json数据写回客户端
-            //设置contentType
-            response.setContentType("application/json;charset=utf-8");
-            response.getWriter().write(json);
             return;
         }
 
@@ -82,13 +84,14 @@ public class UserServlet extends BaseServlet {
         }
 
         //4. 将resultInfo序列化为json，并返回客户端
-        ObjectMapper mapper = new ObjectMapper();
-        String json = mapper.writeValueAsString(resultInfo);
-
-        //将json数据写回客户端
-        //设置contentType
-        response.setContentType("application/json;charset=utf-8");
-        response.getWriter().write(json);
+        this.writeValue(resultInfo, response);
+//        ObjectMapper mapper = new ObjectMapper();
+//        String json = mapper.writeValueAsString(resultInfo);
+//
+//        //将json数据写回客户端
+//        //设置contentType
+//        response.setContentType("application/json;charset=utf-8");
+//        response.getWriter().write(json);
     }
 
     //登陆功能
@@ -113,14 +116,15 @@ public class UserServlet extends BaseServlet {
             resultInfo.setErrorMsg("验证码输入错误");
 
             //将resultInfo序列化为json，并返回客户端
-            ObjectMapper mapper = new ObjectMapper();
-            String json = mapper.writeValueAsString(resultInfo);
+//            ObjectMapper mapper = new ObjectMapper();
+//            String json = mapper.writeValueAsString(resultInfo);
 
 
             //将json数据写回客户端
             //设置contentType
-            response.setContentType("application/json;charset=utf-8");
-            response.getWriter().write(json);
+            this.writeValue(resultInfo, response);
+//            response.setContentType("application/json;charset=utf-8");
+//            response.getWriter().write(json);
             return;
         }
 
@@ -161,9 +165,10 @@ public class UserServlet extends BaseServlet {
         }
 
         //响应数据
-        ObjectMapper mapper = new ObjectMapper();
-        response.setContentType("application/json;charset=utf-8");
-        mapper.writeValue(response.getOutputStream(), resultInfo);
+//        ObjectMapper mapper = new ObjectMapper();
+//        response.setContentType("application/json;charset=utf-8");
+//        mapper.writeValue(response.getOutputStream(), resultInfo);
+        this.writeValue(resultInfo, response);
     }
 
     //查找单个用户
@@ -171,9 +176,11 @@ public class UserServlet extends BaseServlet {
         Object user = request.getSession().getAttribute("user");
 
         //将这个username写会客户端
-        ObjectMapper mapper = new ObjectMapper();
-        response.setContentType("application/json;charset=utf-8");
-        mapper.writeValue(response.getOutputStream(), user);
+        this.writeValue(user,response);
+//
+//        ObjectMapper mapper = new ObjectMapper();
+//        response.setContentType("application/json;charset=utf-8");
+//        mapper.writeValue(response.getOutputStream(), user);
     }
 
     //用户退出功能
