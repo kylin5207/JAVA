@@ -86,7 +86,7 @@
 		function registUser() {
 			if (checkUsername() && checkPassword() && checkCheck()) {
 				//校验通过，发送ajax请求，提交表单数据(使用JQuery调用serialize方法序列化表单数据)
-				$.post("loginServlet", $("#loginForm").serialize(), function (data) {
+				$.post("user/login", $("#loginForm").serialize(), function (data) {
 					//处理服务器响应的数据信息
 					if (data.flag) {
 						//注册成功，跳转至成功页面
