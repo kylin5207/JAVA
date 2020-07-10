@@ -13,6 +13,41 @@
         $(function () {
             var search = location.search; // ?id=1
             var id = search.split("=")[1]; // 切割获取cid
+            var lis = '';
+
+            //发送ajax请求，请求route/pageQuery，传递cid
+            $.get("route/pageQuery", {cid:id}, function (data) {
+                //解析返回的数据，并展示在前台
+                //1 分页工具条的数据展示（
+                // 1.1 总页面、总记录数）
+                $("#totalPage").html(data.totalPage);
+                $("#totalCount").html(data.totalCount);
+
+                var firstPage = '<li><a href="">首页</a></li>';
+                var beforePage = '<li class="threeword"><a href="#">上一页</a></li>';
+                var nextPage = '<li class="threeword"><a href="javascript:;">下一页</a></li>';
+                var tailPage = '<li class="threeword"><a href="javascript:;">末页</a></li>';
+
+                lis += firstPage;
+                lis += beforePage;
+
+                for (var i = 1; i <= data.totalPage ; i++) {
+
+                    //创建页面li
+                    var li = '<li><a href="#">'+i+'</a></li>';
+                    lis += li; //拼接字符串
+                }
+
+                lis += nextPage;
+                lis += tailPage;
+                //将lis设置到pageNum
+                $("#pageNum").html(lis);
+
+
+                //2 列表数据展示
+
+            });
+
 
         });
     </script>
@@ -164,10 +199,10 @@
                     </ul>
                     <div class="page_num_inf">
                         <i></i> 共
-                        <span>12</span>页<span>132</span>条
+                        <span id="totalPage">12</span>页<span id="totalCount">132</span>条
                     </div>
                     <div class="pageNum">
-                        <ul>
+                        <ul id="pageNum">
                             <li><a href="">首页</a></li>
                             <li class="threeword"><a href="#">上一页</a></li>
                             <li><a href="#">1</a></li>
