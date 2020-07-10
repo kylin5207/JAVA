@@ -11,8 +11,9 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script>
         $(function () {
-            var search = location.search;
-            alert(search);
+            var search = location.search; // ?id=1
+            var id = search.split("=")[1]; // 切割获取cid
+
         });
     </script>
 </head>
