@@ -3,7 +3,9 @@ package cn.itcast.travel.domain;
 import java.util.List;
 
 /**
- * 分页对象
+ * 分页对象:
+ * 五个重要要素：
+ *      总页数、总记录数、当前页数、每页显示的条数、每页显示的数据集合
  */
 public class PageBean<T> {
     private int totalCount; // 总记录数
