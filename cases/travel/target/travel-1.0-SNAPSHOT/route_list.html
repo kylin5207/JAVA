@@ -20,8 +20,10 @@
 
             var rname = getParameter("rname");
 
-            alert(id);
-            alert(rname);
+            if(rname){
+                //rname目前经过url编码，首先需要解码
+                rname = window.decodeURIComponent(rname);
+            }
 
             //当页面加载完成后，调用load方法，发送ajax请求加载数据
             load(id, 1);
