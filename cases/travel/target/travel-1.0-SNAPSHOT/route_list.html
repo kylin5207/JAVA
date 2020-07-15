@@ -26,22 +26,25 @@
             }
 
             //当页面加载完成后，调用load方法，发送ajax请求加载数据
-            load(id, 1);
+            load(id, 1, rname);
 
         });
 
-        function load(cid, currentPage) {
+        function load(cid, currentPage, rname) {
             var lis = '';
 
             //发送ajax请求，请求route/pageQuery，传递cid
-            $.get("route/pageQuery", {cid:cid, currentPage:currentPage}, function (data) {
+            $.get("route/pageQuery", {cid:cid, currentPage:currentPage, rname:rname}, function (data) {
                 //解析返回的数据，并展示在前台
                 //1 分页工具条的数据展示（
                 // 1.1 总页面、总记录数）
                 $("#totalPage").html(data.totalPage);
                 $("#totalCount").html(data.totalCount);
 
-                var firstPage = '<li onclick="javascript:load('+cid+','+1+');"><a href="javascript:void(0);">首页</a></li>';
+                // var firstPage = '<li onclick="javascript:load('+cid+','+1+');"><a href="javascript:void(0);">首页</a></li>';
+                var firstPage = '<li onclick="javascript:load('+cid+',1,\''+rname+'\');"><a href="javascript:void(0);">首页</a></li>';
+
+
 
                 var beforeNum = currentPage - 1;
                 if(beforeNum <= 1){
@@ -53,10 +56,10 @@
                     nextNum = data.totalPage;
                 }
 
-                var beforePage = '<li class="threeword" onclick="javascript:load('+cid+','+beforeNum+');"><a href="javascript:void(0);">上一页</a></li>';
+                var beforePage = '<li class="threeword" onclick="javascript:load('+cid+','+beforeNum+',\''+rname+'\');"><a href="javascript:void(0);">上一页</a></li>';
 
-                var nextPage = '<li class="threeword" onclick="javascript:load('+cid+','+nextNum+');"><a href="javascript:void(0);">下一页</a></li>';
-                var tailPage = '<li class="threeword" onclick="javascript:load('+cid+','+data.totalPage+');"><a href="javascript:void(0);">末页</a></li>';
+                var nextPage = '<li class="threeword" onclick="javascript:load('+cid+','+nextNum+',\''+rname+'\');"><a href="javascript:void(0);">下一页</a></li>';
+                var tailPage = '<li class="threeword" onclick="javascript:load('+cid+','+data.totalPage+',\''+rname+'\');"><a href="javascript:void(0);">末页</a></li>';
 
                 lis += firstPage;
                 lis += beforePage;
@@ -97,11 +100,11 @@
                 for (var i = begin; i <= end ; i++) {
                     //判断当前页码是否等于i
                     if(data.currentPage == i){
-                        var li = '<li class="curPage" onclick="javascript:load('+cid+','+i+');"><a href="javascript:void(0);">'+i+'</a></li>';
+                        var li = '<li class="curPage" onclick="javascript:load('+cid+','+i+',\''+rname+'\');"><a href="javascript:void(0);">'+i+'</a></li>';
                     }
                     else{
                         //创建页面li
-                        var li = '<li onclick="javascript:load('+cid+','+i+');"><a href="javascript:void(0);">'+i+'</a></li>';
+                        var li = '<li onclick="javascript:load('+cid+','+i+',\''+rname+'\');"><a href="javascript:void(0);">'+i+'</a></li>';
                     }
                     lis += li; //拼接字符串
                 }

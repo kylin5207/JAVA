@@ -43,7 +43,7 @@ public class RouteServlet extends BaseServlet {
         }
 
         int cid = 0;
-        if(cidstr != null && cidstr.length() > 0){
+        if(cidstr != null && cidstr.length() > 0 && !"null".equals(cidstr)){
             cid = Integer.parseInt(cidstr);
         }
 
