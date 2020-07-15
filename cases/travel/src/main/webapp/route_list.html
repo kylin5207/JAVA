@@ -8,11 +8,22 @@
     <title>黑马旅游-搜索</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" href="css/search.css">
+    <script src="js/getParameter.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script>
         $(function () {
-            var search = location.search; // ?id=1
-            var id = search.split("=")[1]; // 切割获取cid
+            // var search = location.search; // ?id=1
+            // var id = search.split("=")[1]; // 切割获取cid
+
+            var id = getParameter("cid");
+
+
+            var rname = getParameter("rname");
+
+            if(rname){
+                //rname目前经过url编码，首先需要解码
+                rname = window.decodeURIComponent(rname);
+            }
 
             //当页面加载完成后，调用load方法，发送ajax请求加载数据
             load(id, 1);
