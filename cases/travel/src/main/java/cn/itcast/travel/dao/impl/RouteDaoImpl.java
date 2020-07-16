@@ -72,4 +72,16 @@ public class RouteDaoImpl implements RouteDao {
 //        String sql = "select * from tab_route where cid = ? limit ? , ?";
         return template.query(sql, new BeanPropertyRowMapper<Route>(Route.class), params.toArray());
     }
+
+    /**
+     * 根据rid查询route对象
+     * @param rid
+     * @return
+     */
+    @Override
+    public Route findOne(int rid) {
+        String sql = "select * from tab_route where rid = ?";
+        return template.queryForObject(sql, new BeanPropertyRowMapper<Route>(Route.class), rid);
+    }
+
 }

@@ -17,4 +17,13 @@ public interface RouteDao {
         根据cid, start, pageSize查询当前页的数据集合
      */
     public List<Route> findByPage(int cid, int start, int pageSize, String rname);
+
+    /**
+     * 根据rid查询route对象
+     * @param rid
+     * @return
+     */
+    public Route findOne(int rid);
+
+
 }

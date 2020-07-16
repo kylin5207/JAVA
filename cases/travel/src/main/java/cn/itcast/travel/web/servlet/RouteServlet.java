@@ -17,6 +17,7 @@ public class RouteServlet extends BaseServlet {
 
     /**
      * 分页查询
+     *
      * @param request
      * @param response
      * @throws ServletException
@@ -33,17 +34,17 @@ public class RouteServlet extends BaseServlet {
 
         //处理参数
         int currentPage = 1;
-        if(currentPagestr != null && currentPagestr.length() > 0){
+        if (currentPagestr != null && currentPagestr.length() > 0) {
             currentPage = Integer.parseInt(currentPagestr);
         }
 
         int pageSize = 5;
-        if(pageSizestr != null && pageSizestr.length() > 0){
+        if (pageSizestr != null && pageSizestr.length() > 0) {
             pageSize = Integer.parseInt(pageSizestr);
         }
 
         int cid = 0;
-        if(cidstr != null && cidstr.length() > 0 && !"null".equals(cidstr)){
+        if (cidstr != null && cidstr.length() > 0 && !"null".equals(cidstr)) {
             cid = Integer.parseInt(cidstr);
         }
 
@@ -54,4 +55,22 @@ public class RouteServlet extends BaseServlet {
 
     }
 
+    /**
+     * 根据id查询一个旅游线路详情
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void findOne(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //1. 接收rid
+        String rid = request.getParameter("rid");
+
+        //2. 调用service查询route对象
+        Route route = routeService.findOne(Integer.parseInt(rid));
+
+        //3. 转为json写入客户端
+        this.writeValue(route, response);
+
+    }
 }
