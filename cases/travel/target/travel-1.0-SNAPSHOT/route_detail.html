@@ -42,7 +42,7 @@
                         <a class="btn" id="favorite"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>
 
 <!--                        <a  class="btn already" id="already" disabled="disabled"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>-->
-                        <span>已收藏100次</span>
+                        <span id="favoriteCount">已收藏100次</span>
                     </p>
                 </div>        
             </div>
@@ -157,6 +157,8 @@
             $("#sname").html(route.seller.sname);
             $("#consphone").html(route.seller.consphone);
             $("#address").html(route.seller.address);
+            //设置收藏次数
+            $("#favoriteCount").html("已收藏"+route.count+"次");
 
             //图片展示
             //大图
