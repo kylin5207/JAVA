@@ -102,16 +102,41 @@ public class RouteServlet extends BaseServlet {
             uid = user.getUid();
         }
 
-        if(ridStr == null){
+        if (ridStr == null) {
             //如果rid=null，对其进行处理
             rid = 0;
-        }
-        else{
+        } else {
             rid = Integer.parseInt(ridStr);
         }
 
         //2. 调用FavoriteService查询rid和uid的关系
         boolean flag = favoriteService.isFavorite(rid, uid);
         writeValue(flag, response);
+    }
+
+    /**
+     * 添加收藏
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void addFavorite(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //1. 获取线路id和用户id
+        String ridStr = request.getParameter("rid");
+        User user = (User) request.getSession().getAttribute("user");
+        int uid; //存放用户id
+        int rid;
+        if (user == null || ridStr == null) {
+            //用户未登陆或路线id未知
+            return;
+        } else {
+            //用户已经登陆
+            rid = Integer.parseInt(ridStr);
+            uid = user.getUid();
+        }
+
+        //2. 调用service添加
+        favoriteService.add(rid, uid);
     }
 }

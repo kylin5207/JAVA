@@ -25,4 +25,14 @@ public class FavoriteServiceImpl implements FavoriteService {
             return false;
         }
     }
+
+    /**
+     * 添加收藏
+     * @param rid
+     * @param uid
+     */
+    @Override
+    public void add(int rid, int uid) {
+        favoriteDao.add(rid, uid);
+    }
 }
