@@ -25,6 +25,13 @@ public interface RouteDao {
      */
     public Route findOne(int rid);
 
-
-
+    /**
+     * 根据cid和rname和start与pageSize查询排行情况
+     * @param cid
+     * @param start
+     * @param pageSize
+     * @param rname
+     * @return
+     */
+    public List<Route> findRankByPage(int cid, int start, int pageSize, String rname);
 }

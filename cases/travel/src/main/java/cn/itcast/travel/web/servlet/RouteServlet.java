@@ -175,4 +175,42 @@ public class RouteServlet extends BaseServlet {
 
     }
 
+    /**
+     * 路线排行分页查询
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void RankPageQuery(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //1. 接受参数
+        String currentPagestr = request.getParameter("currentPage");
+        String pageSizestr = request.getParameter("pageSize");
+        String cidstr = request.getParameter("cid");
+        String rname = request.getParameter("rname");
+
+        int cid = 0;
+        if (cidstr != null && cidstr.length() > 0 && !"null".equals(cidstr)) {
+            cid = Integer.parseInt(cidstr);
+        }
+
+        //处理参数
+        int currentPage = 1;
+        if (currentPagestr != null && currentPagestr.length() > 0) {
+            currentPage = Integer.parseInt(currentPagestr);
+        }
+
+        int pageSize = 8;
+        if (pageSizestr != null && pageSizestr.length() > 0) {
+            pageSize = Integer.parseInt(pageSizestr);
+        }
+
+        //2. 调用service查询PageBean对象
+        PageBean<Route> route = routeService.RankPageQuery(cid, currentPage, pageSize, rname);
+        //3. 将PageBean序列化为json并返回
+        this.writeValue(route, response);
+
+    }
+
 }

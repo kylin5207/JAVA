@@ -77,4 +77,34 @@ public class RouteServiceImpl implements RouteService {
 
         return route;
     }
+
+    /**
+     * 查询排行榜
+     * @param cid
+     * @param currentPage
+     * @param pageSize
+     * @param rname
+     * @return
+     */
+    @Override
+    public PageBean<Route> RankPageQuery(int cid, int currentPage, int pageSize, String rname) {
+        PageBean<Route> pb = new PageBean<Route>();
+
+        //设置pagebean的相关信息
+        pb.setCurrentPage(currentPage);
+        int totalCount = routeDao.findTotalCount(cid, rname);
+        pb.setTotalCount(totalCount);
+
+        int start = (currentPage-1) * pageSize;
+        List<Route> list = routeDao.findRankByPage(cid, start, pageSize, rname);
+        pb.setList(list);
+
+        pb.setPageSize(pageSize);
+
+        int totalPage = totalCount % pageSize == 0? totalCount/pageSize : (totalCount/pageSize)+1;
+        pb.setTotalPage(totalPage);
+
+        return pb;
+    }
+
 }

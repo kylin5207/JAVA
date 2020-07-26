@@ -84,4 +84,41 @@ public class RouteDaoImpl implements RouteDao {
         return template.queryForObject(sql, new BeanPropertyRowMapper<Route>(Route.class), rid);
     }
 
+    /**
+     * 根据cid和rname查询排行情况
+     * @param cid
+     * @param start
+     * @param pageSize
+     * @param rname
+     * @return
+     */
+    @Override
+    public List<Route> findRankByPage(int cid, int start, int pageSize, String rname) {
+        //1. 定义sql模版
+        String sql = "select * from tab_route where 1=1 ";
+        StringBuilder sb = new StringBuilder(sql);
+
+        List params = new ArrayList(); // 条件
+
+        if(cid != 0){
+            sb.append("and cid = ? ");
+            params.add(cid);
+        }
+
+        if(rname != null && !("null").equals(rname) && rname.length()>0){
+            sb.append("and rname like ? ");
+            params.add("%"+rname+"%");
+        }
+
+        sb.append("order by count desc limit ? , ?");
+        params.add(start);
+        params.add(pageSize);
+
+        sql = sb.toString();
+        System.out.println(sql);
+        System.out.println(params.toString());
+
+        return template.query(sql, new BeanPropertyRowMapper<Route>(Route.class), params.toArray());
+    }
+
 }
