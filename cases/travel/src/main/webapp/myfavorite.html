@@ -6,7 +6,143 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/common.css">
         <link rel="stylesheet" href="css/index.css">
-       <style>
+        <script src="js/getParameter.js"></script>
+        <script src="js/jquery-3.3.1.js"></script>
+
+        <script>
+            $(function () {
+                //当页面加载完成后，调用load方法，发送ajax请求加载数据
+                load(1);
+
+            });
+
+            function load(currentPage) {
+                var lis = '';
+
+                //发送ajax请求，请求route/pageQuery，传递cid
+                $.get("route/FavoritePageQuery", {currentPage: currentPage}, function (data) {
+                    //解析返回的数据，并展示在前台
+                    //1 分页工具条的数据展示（
+                    // 1.1 总页面、总记录数）
+                    $("#totalPage").html(data.totalPage);
+                    $("#totalCount").html(data.totalCount);
+
+                    // var firstPage = '<li onclick="javascript:load('+cid+','+1+');"><a href="javascript:void(0);">首页</a></li>';
+                    var firstPage = '<li onclick="javascript:load(1);"><a href="javascript:void(0);">首页</a></li>';
+
+
+                    var beforeNum = currentPage - 1;
+                    if (beforeNum <= 1) {
+                        beforeNum = 1;
+                    }
+
+                    var nextNum = currentPage + 1;
+                    if (nextNum >= data.totalPage) {
+                        nextNum = data.totalPage;
+                    }
+
+                    var beforePage = '<li class="threeword" onclick="javascript:load(' + beforeNum + ');"><a href="javascript:void(0);">上一页</a></li>';
+
+                    var nextPage = '<li class="threeword" onclick="javascript:load(' + nextNum + ');"><a href="javascript:void(0);">下一页</a></li>';
+                    var tailPage = '<li class="threeword" onclick="javascript:load(' + data.totalPage + ');"><a href="javascript:void(0);">末页</a></li>';
+
+                    lis += firstPage;
+                    lis += beforePage;
+
+                    /**
+                     * 展示分页页码：
+                     * 1. 一共展示10个页码，能够达到前5后4的样式
+                     * 2. 如果前面不足5个，则后面补齐，凑够10条
+                     * 3. 如果后面不足4个，则前面补齐，凑够10条
+                     *
+                     */
+                        //定义开始位置
+                    var begin;
+                    //定义结束位置
+                    var end;
+
+                    if (data.totalPage < 10) {
+                        // 总页码不够10页
+                        begin = 1;
+                        end = data.totalPage;
+                    } else {
+                        //总页码超过10页
+                        begin = data.currentPage - 5;
+                        end = data.currentPage + 4;
+
+                        if (begin <= 1) {
+                            begin = 1;
+                            end = begin + 9;
+                        }
+
+                        if (end > data.totalPage) {
+                            end = data.totalPage;
+                            begin = end - 9;
+                        }
+                    }
+
+                    for (var i = begin; i <= end; i++) {
+                        //判断当前页码是否等于i
+                        if (data.currentPage == i) {
+                            var li = '<li class="curPage" onclick="javascript:load(' + i + ');"><a href="javascript:void(0);">' + i + '</a></li>';
+                        } else {
+                            //创建页面li
+                            var li = '<li onclick="javascript:load(' + i + ');"><a href="javascript:void(0);">' + i + '</a></li>';
+                        }
+                        lis += li; //拼接字符串
+                    }
+
+                    /*for (var i = 1; i <= data.totalPage ; i++) {
+                        //判断当前页码是否等于i
+                        if(data.currentPage == i){
+                            var li = '<li class="curPage" onclick="javascript:load('+cid+','+i+');"><a href="javascript:void(0);">'+i+'</a></li>';
+                        }
+                        else{
+                            //创建页面li
+                            var li = '<li onclick="javascript:load('+cid+','+i+');"><a href="javascript:void(0);">'+i+'</a></li>';
+                        }
+                        lis += li; //拼接字符串
+                    }
+                    */
+
+                    lis += nextPage;
+                    lis += tailPage;
+                    //将lis设置到pageNum
+                    $("#pageNum").html(lis);
+
+
+                    //2 列表数据展示
+                    var route_divs = '';
+
+                    for (var i = 0; i < data.list.length; i++) {
+                        var route = data.list[i];//获取route数据
+
+                        //  <div class="col-md-3">
+                        //     <a href="route_detail.html">
+                        //         <img src="images/collection_pic.jpg" alt="">
+                        //         <div class="has_border">
+                        //             <h3>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</h3>
+                        //             <div class="price">网付价<em>￥</em><strong>889</strong><em>起</em></div>
+                        //          </div>
+                        //     </a>
+                        // </div>
+
+
+                        var div = '<div class="col-md-3"><a href="route_detail.html?rid='+route.rid+'">'+'<img src='+route.rimage+'>'+
+                        '<div class="has_border"><h3>'+route.routeIntroduce+'</h3><div class="price">网付价<em>￥</em><strong>'+route.price+'</strong><em>起</em></div>'+
+                        '</div></a></div>';
+                        route_divs += div;
+                    }
+
+                    $("#routeContent").html(route_divs);
+
+                    //定位到页面顶部
+                    window.scrollTo(100, 0);
+                });
+            }
+
+        </script>
+        <style>
            .tab-content .row>div {
             margin-top: 16px;
            } 
@@ -32,7 +168,7 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="home">
-                            <div class="row">
+                            <div class="row" id="routeContent">
                                 <div class="col-md-3">
                                     <a href="route_detail.html">
                                         <img src="images/collection_pic.jpg" alt="">
@@ -146,7 +282,7 @@
                     </div>
                 </div>
                 <div class="pageNum">
-                    <ul>
+                    <ul id="pageNum">
                         <li><a href="">首页</a></li>
                         <li class="threeword"><a href="#">上一页</a></li>
                         <li><a href="#">1</a></li>

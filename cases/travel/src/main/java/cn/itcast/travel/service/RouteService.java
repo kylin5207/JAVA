@@ -12,4 +12,6 @@ public interface RouteService {
 
     //根据rid查询目标旅游路线的详情
     public Route findOne(int rid);
+
+
 }

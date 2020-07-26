@@ -35,6 +35,7 @@ public class RouteServlet extends BaseServlet {
 
         //接收rname参数
         String rname = request.getParameter("rname");
+        System.out.println("rname:" + rname);
 
         //处理参数
         int currentPage = 1;
@@ -139,4 +140,39 @@ public class RouteServlet extends BaseServlet {
         //2. 调用service添加
         favoriteService.add(rid, uid);
     }
+
+
+    /**
+     * 我的收藏分页查询
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void FavoritePageQuery(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //1. 接受参数
+        String currentPagestr = request.getParameter("currentPage");
+        String pageSizestr = request.getParameter("pageSize");
+        User user = (User) request.getSession().getAttribute("user");
+        int uid = user.getUid();
+
+        //处理参数
+        int currentPage = 1;
+        if (currentPagestr != null && currentPagestr.length() > 0) {
+            currentPage = Integer.parseInt(currentPagestr);
+        }
+
+        int pageSize = 8;
+        if (pageSizestr != null && pageSizestr.length() > 0) {
+            pageSize = Integer.parseInt(pageSizestr);
+        }
+
+        //2. 调用service查询PageBean对象
+        PageBean<Route> route = favoriteService.FavoritePageQuery(uid, currentPage, pageSize);
+        //3. 将PageBean序列化为json并返回
+        this.writeValue(route, response);
+
+    }
+
 }
