@@ -46,6 +46,14 @@ public class FavoriteDaoImpl implements FavoriteDao {
     public void add(int rid, int uid) {
         String sql = "insert into tab_favorite values(?,?,?)";
         jdbcTemplate.update(sql, rid, new Date(), uid);
+
+        //将收藏route的count += 1
+        String sql1 = "select count from tab_route where rid=?";
+        int count = jdbcTemplate.queryForObject(sql1, Integer.class, rid);
+        count += 1;
+
+        String sql2 = "UPDATE tab_route SET count=? where rid=?";
+        jdbcTemplate.update(sql2, count, rid);
     }
 
     /**
