@@ -80,23 +80,22 @@ public class RouteServiceImpl implements RouteService {
 
     /**
      * 查询排行榜
-     * @param cid
      * @param currentPage
      * @param pageSize
      * @param rname
      * @return
      */
     @Override
-    public PageBean<Route> RankPageQuery(int cid, int currentPage, int pageSize, String rname) {
+    public PageBean<Route> RankPageQuery(int currentPage, int pageSize, String rname) {
         PageBean<Route> pb = new PageBean<Route>();
 
         //设置pagebean的相关信息
         pb.setCurrentPage(currentPage);
-        int totalCount = routeDao.findTotalCount(cid, rname);
+        int totalCount = routeDao.findTotalCount(0, rname);
         pb.setTotalCount(totalCount);
 
         int start = (currentPage-1) * pageSize;
-        List<Route> list = routeDao.findRankByPage(cid, start, pageSize, rname);
+        List<Route> list = routeDao.findRankByPage(start, pageSize, rname);
         pb.setList(list);
 
         pb.setPageSize(pageSize);

@@ -13,6 +13,7 @@ public interface RouteDao {
      */
     public int findTotalCount(int cid, String rname);
 
+
     /*
         根据cid, start, pageSize查询当前页的数据集合
      */
@@ -27,11 +28,10 @@ public interface RouteDao {
 
     /**
      * 根据cid和rname和start与pageSize查询排行情况
-     * @param cid
      * @param start
      * @param pageSize
      * @param rname
      * @return
      */
-    public List<Route> findRankByPage(int cid, int start, int pageSize, String rname);
+    public List<Route> findRankByPage(int start, int pageSize, String rname);
 }

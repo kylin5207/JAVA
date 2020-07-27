@@ -187,13 +187,7 @@ public class RouteServlet extends BaseServlet {
         //1. 接受参数
         String currentPagestr = request.getParameter("currentPage");
         String pageSizestr = request.getParameter("pageSize");
-        String cidstr = request.getParameter("cid");
         String rname = request.getParameter("rname");
-
-        int cid = 0;
-        if (cidstr != null && cidstr.length() > 0 && !"null".equals(cidstr)) {
-            cid = Integer.parseInt(cidstr);
-        }
 
         //处理参数
         int currentPage = 1;
@@ -207,7 +201,7 @@ public class RouteServlet extends BaseServlet {
         }
 
         //2. 调用service查询PageBean对象
-        PageBean<Route> route = routeService.RankPageQuery(cid, currentPage, pageSize, rname);
+        PageBean<Route> route = routeService.RankPageQuery(currentPage, pageSize, rname);
         //3. 将PageBean序列化为json并返回
         this.writeValue(route, response);
 

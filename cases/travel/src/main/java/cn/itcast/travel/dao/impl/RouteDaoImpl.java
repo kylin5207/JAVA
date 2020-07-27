@@ -43,6 +43,7 @@ public class RouteDaoImpl implements RouteDao {
         return template.queryForObject(sql, Integer.class, params.toArray());
     }
 
+
     @Override
     public List<Route> findByPage(int cid, int start, int pageSize, String rname) {
         //1. 定义sql模版
@@ -85,25 +86,19 @@ public class RouteDaoImpl implements RouteDao {
     }
 
     /**
-     * 根据cid和rname查询排行情况
-     * @param cid
+     * 根据rname查询排行情况
      * @param start
      * @param pageSize
      * @param rname
      * @return
      */
     @Override
-    public List<Route> findRankByPage(int cid, int start, int pageSize, String rname) {
+    public List<Route> findRankByPage(int start, int pageSize, String rname) {
         //1. 定义sql模版
         String sql = "select * from tab_route where 1=1 ";
         StringBuilder sb = new StringBuilder(sql);
 
         List params = new ArrayList(); // 条件
-
-        if(cid != 0){
-            sb.append("and cid = ? ");
-            params.add(cid);
-        }
 
         if(rname != null && !("null").equals(rname) && rname.length()>0){
             sb.append("and rname like ? ");

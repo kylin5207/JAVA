@@ -14,5 +14,5 @@ public interface RouteService {
     public Route findOne(int rid);
 
     //查询路线排行并进行分页
-    PageBean<Route> RankPageQuery(int cid, int currentPage, int pageSize, String rname);
+    PageBean<Route> RankPageQuery(int currentPage, int pageSize, String rname);
 }
