@@ -1,6 +1,7 @@
 package dao;
 
 import domain.User;
+import mybatis.annotations.Select;
 
 import java.util.List;
 
@@ -13,5 +14,6 @@ public interface UserDao {
      * 查找所有用户
      * @return
      */
+    @Select("Select * from user")
     List<User> findAll();
 }

@@ -20,6 +20,9 @@
 
     <!--映射配置文件的位置（每个Dao独立的配置文件）-->
     <mappers>
-        <mapper resource="dao/UserDao.xml"></mapper>
+        <!--使用xml配置-->
+        <!--<mapper resource="dao/UserDao.xml"></mapper>-->
+        <!--使用注解配置-->
+        <mapper class="dao.UserDao"></mapper>
     </mappers>
 </configuration>
