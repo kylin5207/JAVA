@@ -7,4 +7,9 @@
     <select id="findAll" resultType="domain.User">
         select * from user;
     </select>
+
+    <!--配置保存用户-->
+    <insert id="saveUser" parameterType="domain.User">
+        insert into user(username, address, sex, birthday) values(#{username}, #{address}, #{sex}, #{birthday});
+    </insert>
 </mapper>
