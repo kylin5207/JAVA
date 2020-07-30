@@ -32,4 +32,18 @@ public interface UserDao {
      * @param id
      */
     void deleteUser(Integer id);
+
+    /**
+     * 根据id查询用户信息
+     * @param userId
+     * @return
+     */
+    User findById(Integer userId);
+
+    /**
+     * 根据username进行模糊查询
+     * @param username
+     * @return
+     */
+    List<User> findByName(String username);
 }

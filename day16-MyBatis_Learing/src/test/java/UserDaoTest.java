@@ -134,5 +134,23 @@ public class UserDaoTest {
         userDao.deleteUser(id);
     }
 
+    @Test
+    public void testFindById() throws IOException {
+        int id = 48;
+        //5. 使用代理对象执行方法
+        User user = userDao.findById(id);
+        System.out.println(user);
+    }
+
+    @Test
+    public void testFindByUser() throws IOException {
+        String username = "王";
+        String name = "%"+username+"%";
+        //5. 使用代理对象执行方法
+        List<User> users = userDao.findByName(name);
+        for (User user : users) {
+            System.out.println(user);
+        }
+    }
 
 }
