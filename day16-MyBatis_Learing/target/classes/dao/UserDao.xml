@@ -34,7 +34,8 @@
     <!--推荐使用preparedStatement处理的select * from user where username like #{name}-->
     <!--使用Statement处理的select * from user where username like '%${value}%'-->
     <select id="findByName" parameterType="String" resultType="domain.User">
-        select * from user where username like #{name}
+        select * from user where username like '%${value}%'
+        <!--select * from user where username like #{name}-->
     </select>
 
     <select id="findTotal" resultType="Integer">

@@ -147,7 +147,7 @@ public class UserDaoTest {
         System.out.println(user);
     }
 
-//    基于自动填充%的模糊查询
+////    基于自动填充%的模糊查询
 //    @Test
 //    public void testFindByName1() throws IOException {
 //        String username = "王";
