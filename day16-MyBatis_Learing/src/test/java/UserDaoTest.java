@@ -1,4 +1,5 @@
 import dao.UserDao;
+import domain.QueryVo;
 import domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -178,6 +179,23 @@ public class UserDaoTest {
 
         int count = userDao.findTotal();
         System.out.println("总记录数：" + count);
+    }
+
+    /**
+     * 测试使用QueryVo作为查询条件进行模糊查询
+     * @throws IOException
+     */
+    @Test
+    public void testFindByName3() throws IOException {
+        QueryVo vo = new QueryVo();
+        User user = new User();
+        user.setUsername("%王%");
+        vo.setUser(user);
+        //5. 使用代理对象执行方法
+        List<User> users = userDao.findUserByVo(vo);
+        for (User u : users) {
+            System.out.println(u);
+        }
     }
 
 }

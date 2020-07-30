@@ -40,4 +40,10 @@
     <select id="findTotal" resultType="Integer">
         select count(*) from user;
     </select>
+
+    <!--根据QueryVo的条件，查询用户-->
+    <select id="findUserByVo" parameterType="domain.QueryVo" resultType="domain.User">
+        select * from user where username like #{user.username}
+    </select>
+
 </mapper>
