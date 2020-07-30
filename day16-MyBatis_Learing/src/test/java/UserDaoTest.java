@@ -109,7 +109,11 @@ public class UserDaoTest {
         user.setBirthday(new Date());
 
         //5. 使用代理对象执行方法
+        System.out.println("插入前的user");
+        System.out.println(user);
         userDao.saveUser(user);
+        System.out.println("插入后的user");
+        System.out.println(user);
 
     }
 
@@ -142,8 +146,24 @@ public class UserDaoTest {
         System.out.println(user);
     }
 
+//    基于自动填充%的模糊查询
+//    @Test
+//    public void testFindByName1() throws IOException {
+//        String username = "王";
+//
+//        //5. 使用代理对象执行方法
+//        List<User> users = userDao.findByName(username);
+//        for (User user : users) {
+//            System.out.println(user);
+//        }
+//    }
+
+    /**
+     * 手动添加%的模糊查询
+     * @throws IOException
+     */
     @Test
-    public void testFindByUser() throws IOException {
+    public void testFindByName2() throws IOException {
         String username = "王";
         String name = "%"+username+"%";
         //5. 使用代理对象执行方法
@@ -151,6 +171,13 @@ public class UserDaoTest {
         for (User user : users) {
             System.out.println(user);
         }
+    }
+
+    @Test
+    public void testFindTotal() throws IOException {
+
+        int count = userDao.findTotal();
+        System.out.println("总记录数：" + count);
     }
 
 }
