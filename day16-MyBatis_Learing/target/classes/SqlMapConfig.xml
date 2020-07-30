@@ -3,6 +3,23 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <!--properties属性第一种配置方式-->
+<!--    <properties>-->
+<!--        <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:mysql:///Mybatis"/>-->
+<!--        <property name="username" value="root"/>-->
+<!--        <property name="password" value="123456"/>-->
+<!--    </properties>-->
+
+    <!--properties属性第二种配置方法：
+    resource属性用于指定配置文件的位置，必须存在与类路径下-->
+    <properties resource="jdbcConfig.properties"></properties>
+
+    <!--使用typeAliases配置类别名，只能配置domain包中的类的别名-->
+    <typeAliases>
+        <!--单个别名定义：alias指定别名，type指定类名，指定别名后不区分大小写-->
+        <typeAlias alias="user" type="domain.User"></typeAlias>
+    </typeAliases>
     <!--配置环境-->
     <environments default="mysql">
         <!--配置mysql环境-->
@@ -12,10 +29,10 @@
             <!--配置数据源，连接池-->
             <dataSource type="POOLED">
             <!--配置连接数据库的基本信息(4个)-->
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql:///Mybatis"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
     </environments>
