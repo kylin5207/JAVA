@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.User2Dao">
+    <!--配置 查询结果的列名和实体类的属性名的对应关系-->
+    <resultMap id="userMap" type="domain.User2">
+        <!--主键-->
+        <id property="userId" column="id"></id>
+        <result property="userName" column="username"></result>
+        <result property="userSex" column="sex"></result>
+        <result property="userBirthday" column="birthday"></result>
+        <result property="userAddress" column="address"></result>
+    </resultMap>
+    <!--配置查询所有用户的操作-->
+    <select id="findAll" resultMap="userMap">
+        select * from user;
+    </select>
+
+    <!--配置查询所有用户的操作-->
+<!--    <select id="findAll" resultType="domain.User2">-->
+<!--        &lt;!&ndash;对列名赋别名&ndash;&gt;-->
+<!--        &lt;!&ndash;select id as userid, username, birthday as userbirthday, sex as usersex, address as useraddress from user;&ndash;&gt;-->
+<!--    </select>-->
+
+    <!--配置保存用户-->
+    <insert id="saveUser2" parameterType="domain.User2">
+        <!--配置插入操作后，获取插入数据的id-->
+        <selectKey keyProperty="userId" keyColumn="id" resultType="Integer" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into user(username, address, sex, birthday) values(#{userName}, #{userAddress}, #{userSex}, #{userBirthday});
+    </insert>
+
+    <!--更新用户-->
+    <update id="updateUser2" parameterType="domain.User2">
+        update user set username = #{userName}, address = #{userAddress}, sex = #{userSex}, birthday = #{userBirthday} where id = #{userId};
+    </update>
+
+    <!--根据id删除用户-->
+    <delete id="deleteUser2" parameterType="Integer">
+        delete from user where id = #{userId};
+    </delete>
+
+    <select id="findById" parameterType="Integer" resultMap="userMap">
+        select * from user where id = #{userId};
+    </select>
+
+    <!--推荐使用preparedStatement处理的select * from user where username like #{name}-->
+    <!--使用Statement处理的select * from user where username like '%${value}%'-->
+    <select id="findByName" parameterType="String" resultMap="userMap">
+        select * from user where username like #{userName}
+    </select>
+
+    <select id="findTotal" resultType="Integer">
+        select count(*) from user;
+    </select>
+
+    <!--根据QueryVo的条件，查询用户-->
+    <select id="findUserByVo" parameterType="domain.QueryVo2" resultMap="userMap">
+        select * from user where username like #{user.userName}
+    </select>
+
+</mapper>
