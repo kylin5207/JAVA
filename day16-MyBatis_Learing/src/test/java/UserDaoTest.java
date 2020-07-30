@@ -112,4 +112,27 @@ public class UserDaoTest {
         userDao.saveUser(user);
 
     }
+
+    @Test
+    public void testUpdate() throws IOException {
+        User user = new User();
+        user.setId(50);
+        user.setUsername("Kylin");
+        user.setAddress("洛阳龙门");
+        user.setSex("男");
+        user.setBirthday(new Date());
+
+        //5. 使用代理对象执行方法
+        userDao.updateUser(user);
+
+    }
+
+    @Test
+    public void testDelete() throws IOException {
+        int id = 50;
+        //5. 使用代理对象执行方法
+        userDao.deleteUser(id);
+    }
+
+
 }
