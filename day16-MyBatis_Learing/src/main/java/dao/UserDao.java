@@ -1,6 +1,7 @@
 package dao;
 
 import domain.QueryVo;
+import domain.QueryVo3;
 import domain.User;
 
 import java.util.List;
@@ -61,4 +62,18 @@ public interface UserDao {
      * @return
      */
     List<User> findUserByVo(QueryVo vo);
+
+    /**
+     * 根据传入的参数条件进行用户查询
+     * @param user : 该user可能只有一个属性，也可能都有，也可能一个也没有
+     * @return
+     */
+    List<User> findUserByCondition(User user);
+
+    /**
+     * 根据id列表查找用户
+     * @param vo
+     * @return
+     */
+    List<User> findUserByIds(QueryVo3 vo);
 }

@@ -1,5 +1,6 @@
 import dao.UserDao;
 import domain.QueryVo;
+import domain.QueryVo3;
 import domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -11,6 +12,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -63,6 +65,7 @@ public class UserDaoTest {
         SqlSessionFactory factory = builder.build(in);
 
         //3. 使用工厂生产SqlSession对象
+        //factory.openSession(true);实现事务自动提交
         sqlSession = factory.openSession();
 
         //4. 使用SqlSession创建接口的代理对象
@@ -198,4 +201,37 @@ public class UserDaoTest {
         }
     }
 
+    /**
+     * 测试使用User作为查询条件进行模糊查询
+     * @throws IOException
+     */
+    @Test
+    public void testFindUserByCondition() throws IOException {
+        User user = new User();
+        user.setUsername("王小二");
+        //5. 使用代理对象执行方法
+        List<User> users = userDao.findUserByCondition(user);
+        for (User u : users) {
+            System.out.println(u);
+        }
+    }
+
+    /**
+     * 测试使用QueryVo3作为查询条件进行模糊查询
+     * @throws IOException
+     */
+    @Test
+    public void testFindUserByIds() throws IOException {
+        QueryVo3 vo = new QueryVo3();
+        List<Integer> ids = new ArrayList<>();
+        ids.add(41);
+        ids.add(42);
+        ids.add(43);
+        vo.setIds(ids);
+        //5. 使用代理对象执行方法
+        List<User> users = userDao.findUserByIds(vo);
+        for (User u : users) {
+            System.out.println(u);
+        }
+    }
 }
