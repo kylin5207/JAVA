@@ -1,6 +1,7 @@
 package dao;
 
 import domain.Account;
+import domain.AccountUser;
 
 import java.util.List;
 
@@ -12,5 +13,10 @@ public interface AccountDao {
      */
     List<Account> findAll();
 
-
+    /**
+     * 查询所有账单，并且带有用户名和地址信息
+     * 这种方式实际用的不多
+     * @return
+     */
+    List<AccountUser> findAllAccount();
 }

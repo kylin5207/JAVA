@@ -1,6 +1,7 @@
 import dao.AccountDao;
 import dao.UserDao;
 import domain.Account;
+import domain.AccountUser;
 import domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -68,6 +69,14 @@ public class AccountDaoTest {
         List<Account> accounts = accountDao.findAll();
         for (Account account : accounts) {
             System.out.println(account);
+        }
+    }
+
+    @Test
+    public void testfindAllAccount() throws IOException {
+        List<AccountUser> au = accountDao.findAllAccount();
+        for (AccountUser accountUser : au) {
+            System.out.println(accountUser);
         }
     }
 

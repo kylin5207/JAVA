@@ -7,4 +7,9 @@
     <select id="findAll" resultType="account">
         select * from account
     </select>
+
+    <!--查询所有账单，同时包含用户名和地址信息-->
+    <select id="findAllAccount" resultType="AccountUser">
+        select a.*, u.username, u.address from user u, account a where u.id = a.uid;
+    </select>
 </mapper>
