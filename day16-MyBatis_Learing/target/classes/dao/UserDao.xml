@@ -5,7 +5,7 @@
 <mapper namespace="dao.UserDao">
 
     <sql id="defaultUser">
-        select * from user;
+        select * from user
     </sql>
 
     <!--配置查询所有用户的操作-->

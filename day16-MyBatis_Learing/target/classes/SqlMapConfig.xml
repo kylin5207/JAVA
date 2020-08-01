@@ -44,5 +44,6 @@
     <mappers>
         <mapper resource="dao/UserDao.xml"></mapper>
         <mapper resource="dao/User2Dao.xml"></mapper>
+        <mapper resource="dao/AccountDao.xml"></mapper>
     </mappers>
 </configuration>
