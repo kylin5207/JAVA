@@ -1,5 +1,5 @@
-import dao.UserDao;
-import domain.User;
+import dao.RoleDao;
+import domain.Role;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -12,10 +12,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-public class UserDaoTest {
+public class RoleDaoTest {
     private InputStream in;
     private SqlSession sqlSession;
-    private UserDao userDao;
+    private RoleDao roleDao;
 
     /**
      * 初始化(测试方法，执行前执行)
@@ -36,7 +36,7 @@ public class UserDaoTest {
         sqlSession = factory.openSession();
 
         //4. 使用SqlSession创建接口的代理对象
-        userDao = sqlSession.getMapper(UserDao.class);
+        roleDao = sqlSession.getMapper(RoleDao.class);
     }
 
     /**
@@ -61,34 +61,20 @@ public class UserDaoTest {
 
     @Test
     public void testFindAll() throws IOException {
-
         //5. 使用代理对象执行方法
-        List<User> users = userDao.findAll();
-        for (User user : users) {
-            System.out.println(user);
-        }
-    }
-
-
-    @Test
-    public void testFindAllUserAccounts() throws IOException {
-
-        //5. 使用代理对象执行方法
-        List<User> users = userDao.findAllUserAccounts();
-        for (User user : users) {
-            System.out.println(user);
-            System.out.println(user.getAccounts());
+        List<Role> roles = roleDao.findAll();
+        for (Role role : roles) {
+            System.out.println(role);
         }
     }
 
     @Test
-    public void testFindAllUserRoles() throws IOException {
-        //5. 使用代理对象执行方法
-        List<User> users = userDao.findAllUserRoles();
-        for (User user : users) {
-            System.out.println("-----每个用户----");
-            System.out.println(user);
-            System.out.println(user.getRoles());
+    public void testFindAllUser(){
+        List<Role> roles = roleDao.findAllUser();
+        for (Role role : roles) {
+            System.out.println("------每个角色-------");
+            System.out.println(role);
+            System.out.println(role.getUsers());
         }
     }
 

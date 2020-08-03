@@ -14,6 +14,17 @@ public class User implements Serializable {
     //一对多关系映射，主表实体类应该包含从表实体的集合引用
     private List<Account> accounts;
 
+    //多对多关系映射，一个用户可以具备多个角色
+    private List<Role> roles;
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
+
     public User() {
     }
 

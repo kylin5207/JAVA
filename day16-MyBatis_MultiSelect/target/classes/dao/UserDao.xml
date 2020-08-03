@@ -19,6 +19,20 @@
         </collection>
     </resultMap>
 
+    <resultMap id="userRoleMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="birthday" property="birthday"></result>
+        <result column="sex" property="sex"></result>
+        <result column="address" property="address"></result>
+        <!--配置User对象中accounts集合的映射-->
+        <collection property="roles" ofType="role">
+            <id column="rid" property="rid"></id>
+            <result column="role_name" property="rolename"></result>
+            <result column="role_desc" property="roledesc"></result>
+        </collection>
+    </resultMap>
+
     <sql id="defaultUser">
         select * from user
     </sql>
@@ -57,6 +71,13 @@
 
     <select id="findAllUserAccounts" resultMap="userAccountMap">
         select u.*, a.id as aid ,a.uid, a.money from user u left outer join account a on u.id =a.uid;
+    </select>
+
+    <select id="findAllUserRoles" resultMap="userRoleMap">
+        select u.*, r.id as rid , r.role_name, r.role_desc
+        from user u
+        left outer join user_role ur on u.id = ur.uid
+        left outer join role r on r.id = ur.rid;
     </select>
 
 

@@ -50,4 +50,10 @@ public interface UserDao {
      */
     List<User> findAllUserAccounts();
 
+    /**
+     * 查询用户的所有角色信息
+     * @return
+     */
+    List<User> findAllUserRoles();
+
 }
