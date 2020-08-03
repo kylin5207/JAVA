@@ -2,6 +2,7 @@ package domain;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 public class User implements Serializable {
     private Integer id;
@@ -9,6 +10,9 @@ public class User implements Serializable {
     private Date birthday;
     private String sex;
     private String address;
+
+    //一对多关系映射，主表实体类应该包含从表实体的集合引用
+    private List<Account> accounts;
 
     public User() {
     }
@@ -59,6 +63,14 @@ public class User implements Serializable {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
     }
 
     @Override

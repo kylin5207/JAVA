@@ -1,5 +1,6 @@
 package dao;
 
+import domain.Account;
 import domain.User;
 import java.util.List;
 
@@ -41,5 +42,12 @@ public interface UserDao {
      * @return
      */
     List<User> findUserByCondition(User user);
+
+
+    /**
+     * 查找所有用户而且显示用户的所有账单信息
+     * @return
+     */
+    List<User> findAllUserAccounts();
 
 }
