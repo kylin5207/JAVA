@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.UserDao">
+
+    <!--定义User的resultMap-->
+    <resultMap id="userAccountMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="birthday" property="birthday"></result>
+        <result column="sex" property="sex"></result>
+        <result column="address" property="address"></result>
+        <!--配置User对象中accounts集合的映射-->
+        <collection property="accounts" ofType="account" select="dao.AccountDao.findAccountByUid" column="id">
+        </collection>
+    </resultMap>
+
+    <resultMap id="userRoleMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="birthday" property="birthday"></result>
+        <result column="sex" property="sex"></result>
+        <result column="address" property="address"></result>
+        <!--配置User对象中accounts集合的映射-->
+        <collection property="roles" ofType="role">
+            <id column="rid" property="rid"></id>
+            <result column="role_name" property="rolename"></result>
+            <result column="role_desc" property="roledesc"></result>
+        </collection>
+    </resultMap>
+
+    <sql id="defaultUser">
+        select * from user
+    </sql>
+
+    <!--配置查询所有用户的操作-->
+    <select id="findAll" resultType="user">
+        <include refid="defaultUser"></include>
+    </select>
+
+    <select id="findById" parameterType="Integer" resultType="domain.User">
+        select * from user where id = #{id};
+    </select>
+
+    <!--推荐使用preparedStatement处理的select * from user where username like #{name}-->
+    <!--使用Statement处理的select * from user where username like '%${value}%'-->
+    <select id="findByName" parameterType="String" resultType="domain.User">
+        <!--select * from user where username like '%${value}%'-->
+        select * from user where username like #{name}
+    </select>
+
+    <select id="findTotal" resultType="Integer">
+        select count(*) from user;
+    </select>
+
+    <select id="findUserByCondition" resultType="domain.User" parameterType="domain.User">
+        select * from user
+        <where>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+        </where>
+    </select>
+
+    <select id="findAllUserAccounts" resultMap="userAccountMap">
+        select * from user
+    </select>
+
+    <select id="findAllUserRoles" resultMap="userRoleMap">
+        select u.*, r.id as rid , r.role_name, r.role_desc
+        from user u
+        left outer join user_role ur on u.id = ur.uid
+        left outer join role r on r.id = ur.rid;
+    </select>
+
+
+</mapper>

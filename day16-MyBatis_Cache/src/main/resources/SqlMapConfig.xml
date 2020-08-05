@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="jdbcConfig.properties"></properties>
+
+    <!--配置参数， 开启延迟加载-->
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!--使用typeAliases配置类别名，只能配置domain包中的类的别名-->
+    <typeAliases>
+        <!--单个别名定义：alias指定别名，type指定类名，指定别名后不区分大小写-->
+        <typeAlias alias="user" type="domain.User"></typeAlias>
+        <!--批量别名定义-->
+        <!--用于指定要配置别名的包，当指定之后，该包下的实体类都会注册别名，并且类名就是别名，不再区分大小写-->
+        <package name="domain"></package>
+    </typeAliases>
+    <!--配置环境-->
+    <environments default="mysql">
+        <!--配置mysql环境-->
+        <environment id="mysql">
+            <!--配置事务类型-->
+            <transactionManager type="jdbc"></transactionManager>
+            <!--配置数据源，连接池-->
+            <dataSource type="POOLED">
+            <!--配置连接数据库的基本信息(4个)-->
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--映射配置文件的位置（每个Dao独立的配置文件）-->
+    <mappers>
+        <package name="dao"></package>
+<!--        <mapper resource="dao/UserDao.xml"></mapper>-->
+<!--        <mapper resource="dao/AccountDao.xml"></mapper>-->
+    </mappers>
+</configuration>
