@@ -17,6 +17,7 @@ public class UserDaoTest {
     private InputStream in;
     private SqlSession sqlSession;
     private UserDao userDao;
+    private SqlSessionFactory factory;
 
     /**
      * 初始化(测试方法，执行前执行)
@@ -30,7 +31,7 @@ public class UserDaoTest {
 
         //2. 创建SqlSessionFactory工厂
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
-        SqlSessionFactory factory = builder.build(in);
+        factory = builder.build(in);
 
         //3. 使用工厂生产SqlSession对象
         //factory.openSession(true);实现事务自动提交
@@ -78,5 +79,49 @@ public class UserDaoTest {
             System.out.println(user);
             System.out.println(user.getAccounts());
         }
+    }
+
+    /**
+     * 一级缓存
+     * (只要sqlSession没有close或者flush，则里面的缓存一直存在；
+     * 否则，消失)
+     */
+    @Test
+    public void testFirstLevelCache(){
+        User user1 = userDao.findById(41);
+        System.out.println(user1);
+
+        //或者用sqlSession.clearCache();清空缓存
+        sqlSession.close();
+
+        //再次开启sqlSession
+        sqlSession = factory.openSession();
+        userDao = sqlSession.getMapper(UserDao.class);
+
+        User user2 = userDao.findById(41);
+        System.out.println(user2);
+
+        //如果SqlSession没有被close或者flush，则一直存在
+        System.out.println(user1 == user2);
+
+    }
+
+    /**
+     * 测试缓存的同步
+     */
+    @Test
+    public void testSynchronizeCache(){
+        //1. 查询用户
+        User user1 = userDao.findById(41);
+        System.out.println(user1);
+
+        //2. 更新用户
+        user1.setUsername("老王头");
+        user1.setAddress("河南");
+        userDao.updateUser(user1);
+
+        //3. 再次查询id为41的用户
+        User user2 = userDao.findById(41);
+        System.out.println(user2);
     }
 }

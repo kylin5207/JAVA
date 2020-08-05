@@ -4,6 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="dao.UserDao">
 
+    <!--开启user支持二级缓存-->
+    <cache/>
+
     <!--定义User的resultMap-->
     <resultMap id="userAccountMap" type="user">
         <id column="id" property="id"></id>
@@ -39,7 +42,7 @@
         <include refid="defaultUser"></include>
     </select>
 
-    <select id="findById" parameterType="Integer" resultType="domain.User">
+    <select id="findById" parameterType="Integer" resultType="domain.User" useCache="true">
         select * from user where id = #{id};
     </select>
 
@@ -77,5 +80,9 @@
         left outer join role r on r.id = ur.rid;
     </select>
 
+    <!--更新用户信息-->
+    <update id="updateUser" parameterType="user">
+        update user set username=#{username}, address=#{address} where id = #{id}
+    </update>
 
 </mapper>

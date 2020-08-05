@@ -10,6 +10,7 @@
     <settings>
         <setting name="lazyLoadingEnabled" value="true"/>
         <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="cacheEnabled" value="true"></setting>
     </settings>
 
     <!--使用typeAliases配置类别名，只能配置domain包中的类的别名-->

@@ -56,4 +56,5 @@ public interface UserDao {
      */
     List<User> findAllUserRoles();
 
+    void updateUser(User user);
 }
