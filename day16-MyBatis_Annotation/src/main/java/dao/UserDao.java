@@ -11,6 +11,7 @@ import java.util.List;
  * 一共有四个注解：
  * Select，Update，Delete，Insert
  */
+@CacheNamespace(blocking = true)
 public interface UserDao {
 
     /**

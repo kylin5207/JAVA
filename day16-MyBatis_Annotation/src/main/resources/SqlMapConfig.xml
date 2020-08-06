@@ -6,6 +6,10 @@
 
     <properties resource="jdbcConfig.properties"></properties>
 
+    <settings>
+        <setting name="cacheEnabled" value="true"></setting>
+    </settings>
+
     <!--使用typeAliases配置类别名，只能配置domain包中的类的别名-->
     <typeAliases>
         <!--批量别名定义-->
