@@ -1,10 +1,8 @@
 package dao;
 
 import domain.User;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 
 import java.util.List;
 
@@ -49,5 +47,16 @@ public interface UserDao {
      */
     @Select("select count(*) from user")
     int findTotal();
+
+    @Select("select * from user")
+    @Results(id="UserAccountMap", value={
+            @Result(id=true, column = "id", property = "id"),
+            @Result(column = "username", property = "username"),
+            @Result(column = "address", property = "address"),
+            @Result(column = "sex", property = "sex"),
+            @Result(column = "birthday", property = "birthday"),
+            @Result(property = "accounts", column = "id", many = @Many(select = "dao.AccountDao.findAccountByUid", fetchType= FetchType.LAZY))
+    })
+    List<User> findUserAccount();
 
 }

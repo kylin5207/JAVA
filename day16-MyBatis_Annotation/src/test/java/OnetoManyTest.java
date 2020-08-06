@@ -21,6 +21,7 @@ public class OnetoManyTest {
     private InputStream in;
     private SqlSession sqlSession;
     private AccountDao accountDao;
+    private UserDao userDao;
 
     /**
      * 初始化(测试方法，执行前执行)
@@ -42,6 +43,7 @@ public class OnetoManyTest {
 
         //4. 使用SqlSession创建接口的代理对象
         accountDao = sqlSession.getMapper(AccountDao.class);
+        userDao = sqlSession.getMapper(UserDao.class);
     }
 
     /**
@@ -64,13 +66,29 @@ public class OnetoManyTest {
         }
     }
 
+    /**
+     * 一对一查询
+     */
     @Test
-    public void testFindAll(){
+    public void testOneToOne(){
         List<Account> accounts = accountDao.findAll();
         for (Account account : accounts) {
             System.out.println("---------每个账单信息--------");
             System.out.println(account);
             System.out.println(account.getUser());
+        }
+    }
+
+    /**
+     * 一对多查询
+     */
+    @Test
+    public void testOneToMany(){
+        List<User> users = userDao.findUserAccount();
+        for (User user : users) {
+            System.out.println("-------每个用户------");
+            System.out.println(user);
+            System.out.println(user.getAccounts());
         }
     }
 
