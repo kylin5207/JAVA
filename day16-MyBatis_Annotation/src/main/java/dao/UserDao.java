@@ -39,8 +39,8 @@ public interface UserDao {
      * @param name
      * @return
      */
-//    @Select("select * from user where username like #{name}")
-    @Select("select * from user where username like '%${value}%'")
+    @Select("select * from user where username like #{name}")
+//    @Select("select * from user where username like '%${value}%'")
     List<User> findUserByName(String name);
 
     /**

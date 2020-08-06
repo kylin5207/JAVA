@@ -1,4 +1,6 @@
+import dao.AccountDao;
 import dao.UserDao;
+import domain.Account;
 import domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -10,18 +12,15 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
 import java.util.List;
 
 /**
- * 基于注解的Mybatis
+ * 一对多测试
  */
-
-
-public class UserDaoTest {
+public class OnetoManyTest {
     private InputStream in;
     private SqlSession sqlSession;
-    private UserDao userDao;
+    private AccountDao accountDao;
 
     /**
      * 初始化(测试方法，执行前执行)
@@ -42,7 +41,7 @@ public class UserDaoTest {
         sqlSession = factory.openSession();
 
         //4. 使用SqlSession创建接口的代理对象
-        userDao = sqlSession.getMapper(UserDao.class);
+        accountDao = sqlSession.getMapper(AccountDao.class);
     }
 
     /**
@@ -67,48 +66,12 @@ public class UserDaoTest {
 
     @Test
     public void testFindAll(){
-        List<User> users = userDao.findAll();
-        for (User user : users) {
-            System.out.println(user);
+        List<Account> accounts = accountDao.findAll();
+        for (Account account : accounts) {
+            System.out.println("---------每个账单信息--------");
+            System.out.println(account);
+            System.out.println(account.getUser());
         }
     }
 
-    @Test
-    public void testSaveUser(){
-        User user = new User();
-        user.setUsername("Smq");
-        user.setAddress("河南");
-        user.setBirthday(new Date());
-        user.setSex("男");
-        userDao.saveUser(user);
-    }
-
-    @Test
-    public void testUpdateUser(){
-        User user = userDao.findByUid(56);
-        user.setAddress("郑州");
-        userDao.saveUser(user);
-    }
-
-    @Test
-    public void testDeleteUser(){
-        User user = userDao.findByUid(56);
-        userDao.deleteUser(56);
-    }
-
-    @Test
-    public void testFindByName(){
-        String name = "王";
-        List<User> users = userDao.findUserByName('%'+name+'%');
-//        List<User> users = userDao.findUserByName(name);
-        for (User user : users) {
-            System.out.println(user);
-        }
-    }
-
-    @Test
-    public void testFindTotal(){
-        int count = userDao.findTotal();
-        System.out.println(count);
-    }
 }
