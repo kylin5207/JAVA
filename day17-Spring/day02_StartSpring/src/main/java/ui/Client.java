@@ -19,6 +19,7 @@ public class Client {
     public static void main(String[] args) {
         //1. 获取核心容器对象
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+//        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
 
         //2. 根据id获取bean对象
         IAccountService service = (IAccountService) ac.getBean("accountService");
@@ -27,5 +28,8 @@ public class Client {
         //3. 调用方法
         System.out.println(service);
         System.out.println(dao);
+
+        //4. 手动关闭容器
+//        ac.close();
     }
 }

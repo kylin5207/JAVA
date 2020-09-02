@@ -14,4 +14,12 @@ public class AccountServiceImpl implements IAccountService {
     public void saveAccount() {
         dao.saveAccount();
     }
+
+    public void init(){
+        System.out.println("service中的对象初始化了");
+    }
+
+    public void destroy(){
+        System.out.println("service中的对象销毁了");
+    }
 }
