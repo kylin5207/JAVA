@@ -17,14 +17,20 @@ public class Client {
      */
     public static void main(String[] args) {
         //1. 获取核心容器对象
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         IAccountService service = (IAccountService)ac.getBean("accountService");
         service.saveAccount();
         //3. 调用方法
         System.out.println(service);
 
-        IAccountDao dao = ac.getBean("accountDao", IAccountDao.class);
-        System.out.println(dao);
+        ac.close();
+
+//        IAccountService service2 = (IAccountService)ac.getBean("accountService");
+//        System.out.println("service == service2 ? "+ (service == service2));
+//
+//        IAccountDao dao = ac.getBean("accountDao", IAccountDao.class);
+//        System.out.println(dao);
 
     }
 }
