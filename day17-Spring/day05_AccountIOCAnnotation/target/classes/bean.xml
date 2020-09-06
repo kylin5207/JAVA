@@ -6,24 +6,24 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:annotation-config/>
+<!--    <context:annotation-config/>-->
 
-    <!--告知spring在创建容器时要扫描的包-->
-    <context:component-scan base-package="dao"></context:component-scan>
-    <context:component-scan base-package="service"></context:component-scan>
+<!--    &lt;!&ndash;告知spring在创建容器时要扫描的包&ndash;&gt;-->
+<!--    <context:component-scan base-package="dao"></context:component-scan>-->
+<!--    <context:component-scan base-package="service"></context:component-scan>-->
 
-    <!--配置QueryRunner(建议使用多线程，避免干扰)-->
-    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
-        <!--注入数据源-->
-        <constructor-arg name="ds" ref="dataSource"></constructor-arg>
-    </bean>
+<!--    &lt;!&ndash;配置QueryRunner(建议使用多线程，避免干扰)&ndash;&gt;-->
+<!--    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">-->
+<!--        &lt;!&ndash;注入数据源&ndash;&gt;-->
+<!--        <constructor-arg name="ds" ref="dataSource"></constructor-arg>-->
+<!--    </bean>-->
 
-    <!--配置数据源-->
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <!--注入连接数据库的相关信息-->
-        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/maven"></property>
-        <property name="user" value="root"></property>
-        <property name="password" value="123456"></property>
-    </bean>
+<!--    &lt;!&ndash;配置数据源&ndash;&gt;-->
+<!--    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+<!--        &lt;!&ndash;注入连接数据库的相关信息&ndash;&gt;-->
+<!--        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>-->
+<!--        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/maven"></property>-->
+<!--        <property name="user" value="root"></property>-->
+<!--        <property name="password" value="123456"></property>-->
+<!--    </bean>-->
 </beans>

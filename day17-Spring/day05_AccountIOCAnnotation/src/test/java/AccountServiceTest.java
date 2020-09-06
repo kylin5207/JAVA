@@ -1,6 +1,9 @@
+import config.JdbcConfig;
+import config.SpringConfiguration;
 import domain.Account;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import service.IAccountService;
 
@@ -14,7 +17,9 @@ import java.util.List;
  */
 public class AccountServiceTest {
     //1. 获取容器
-    ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+    //使用AnnotationConfigApplicationContext可不写@Configuration注解
+    ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
+//    ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
 
     //2. 得到业务层对象
     IAccountService service = ac.getBean("accountService", IAccountService.class);
