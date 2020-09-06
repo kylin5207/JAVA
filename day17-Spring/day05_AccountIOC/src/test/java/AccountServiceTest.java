@@ -1,9 +1,12 @@
 import domain.Account;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import service.IAccountService;
-
 import java.util.List;
 
 /**
@@ -12,12 +15,11 @@ import java.util.List;
  *
  *  emmm还是存在缺点的，这种方式虽然能解决问题，但是扔需要我们自己写代码来获取容器。
  */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:bean.xml")
 public class AccountServiceTest {
-    //1. 获取容器
-    ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-
-    //2. 得到业务层对象
-    IAccountService service = ac.getBean("accountService", IAccountService.class);
+    @Autowired
+    private IAccountService service;
 
     @Test
     public void testFindAll(){
