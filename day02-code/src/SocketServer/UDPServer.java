@@ -32,7 +32,7 @@ public class UDPServer {
 //        5. 响应客户端
         InetAddress address = packet.getAddress();
         int port = packet.getPort();
-        byte[] data2 = ("我们收到了您的请求：" + info).getBytes();
+        byte[] data2 = ("我们收到了您的请求: " + info).getBytes();
 
 //        6. 创建数据包
         DatagramPacket packet2 = new DatagramPacket(data2, data2.length, address, port);
