@@ -18,7 +18,7 @@ import java.net.Socket;
 public class ClientServer {
     public static void main(String[] args) throws IOException {
 //        1. 创建本地字节输入流，读取本地到文件
-        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("/Users/shangmengqi/Desktop/kylin/JAVA学习/day02-code/src/SocketServer/UploadFile/Client/Music.mp3"));
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("src/SocketServer/UploadFile/Client/Music.mp3"));
 
 //        2. 创建Socket对象，使用其getOutputStream()方法，获取网络输出流对象，写入该文件
         Socket socket = new Socket("127.0.0.1", 8888);

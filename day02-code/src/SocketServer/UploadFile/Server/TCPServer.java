@@ -11,7 +11,7 @@ public class TCPServer {
     public static void main(String[] args) throws IOException {
 //        1. 创建本地字节输出流，写入文件到本地
         //先判断本地是否有FileLoad文件夹
-        File directoryFile = new File("/Users/shangmengqi/Desktop/kylin/JAVA学习/day02-code/src/SocketServer/UploadFile/Server/FileLoad");
+        File directoryFile = new File("src/SocketServer/UploadFile/Server/FileLoad");
         if(!directoryFile.exists()){
             directoryFile.mkdir();
         }
