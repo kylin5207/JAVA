@@ -1,9 +1,8 @@
-package Test1;
 
 import java.util.Scanner;
 
 /*
- * switch��ϰ
+ * switch使用格式
  */
 public class SwitchTest {
 
