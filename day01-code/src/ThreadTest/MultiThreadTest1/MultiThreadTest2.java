@@ -21,6 +21,7 @@ class RunnableTest implements Runnable {
         }
     }
 }
+
 public class MultiThreadTest2 {
     public static void main(String[] args) {
         Runnable runnable = new RunnableTest();

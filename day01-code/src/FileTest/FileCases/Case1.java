@@ -12,7 +12,7 @@ import java.io.File;
 public class Case1 {
     public static void main(String[] args) {
 
-        File file = new File("/Users/shangmengqi/Desktop/kylin/JAVA学习/day01-code");
+        File file = new File("//Users//shangmengqi//Desktop//kylin//JAVAStudy//day01-code");
         getAllFiles(file);
     }
 

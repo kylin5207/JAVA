@@ -2,6 +2,10 @@ package CollectionTest.SetTest.HashCodeTest;
 
 import java.util.Objects;
 
+/**
+ * 如果想利用集合存储某个类的对象，为了保证其唯一性。必须在该类中实现equals()和hashCode()的方法
+ */
+
 public class Person {
     private String name;
     private int age;
